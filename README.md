@@ -11,14 +11,14 @@ I suppose you already know how to use Jekyll, and that’s why you were looking 
 
 1) Copy or move the whole unarchived directory structure to the preferred destination on your local machine. I suggest you don’t overwrite your current one, but create the new one instead.
 
-2) Open _config.yml and set baseurl: so it points to the directory where your site will be presented on your server. For example if your domain name is mydomain.com and your jekyll site will be inside directory jekyll, so you will access it via http://www.mydomain.com/jekyll/ than your baseurl will be /jekyll
+2) Open \_config.yml and set baseurl: so it points to the directory where your site will be presented on your server. For example if your domain name is mydomain.com and your jekyll site will be inside directory jekyll, so you will access it via http://www.mydomain.com/jekyll/ than your baseurl will be /jekyll
 
 
 3) From terminal cd into the directory where you unarchived structure is and run this command:
 
     jekyll build
 
-This will create new (or update existing) folder _site where the whole website will be generated and ready for use.
+This will create new (or update existing) folder \_site where the whole website will be generated and ready for use.
 
 4) To check out locally what your generated site looks like, run this command from terminal:
 
@@ -28,7 +28,7 @@ This will run server of your site on your localhost and you can easily access it
 
 5) Once you are happy with the result, you can move your generated site to you web hosting provider.
 
-Just about any traditional web hosting provider will let you upload files to their servers over FTP. To upload generated site to a web host using FTP, simply copy the content of generated _site folder to the root folder of your hosting account. This is most likely to be the httpdocs or public_html folder on most hosting providers.
+Just about any traditional web hosting provider will let you upload files to their servers over FTP. To upload generated site to a web host using FTP, simply copy the content of generated \_site folder to the root folder of your hosting account. This is most likely to be the httpdocs or public_html folder on most hosting providers.
 
 If you want to use GitHub as your web hosting provider, you can follow this easy tutorial https://pages.github.com/
 
@@ -45,24 +45,24 @@ The default value of posts per page is set to 10.
 
 To change the number of post per page:
 
-1. Open _config.yml
+1. Open \_config.yml
 2. Set the preferred number of posts per page after paginate:
 3. Save the file.
 
 ## Posts
 
-Post should follow the basic structure. It is a markdown file stored inside _posts directory.
+Post should follow the basic structure. It is a markdown file stored inside \_posts directory.
 
 To write a new post, it is best to copy one of predefined files and modify it’s content.
 
 Every post file includes header:
 
----
-layout: post
-title: This is a title of your post
-date: '2015-06-23 06:17:27'
-tags: windows linux
----
+    ---
+    layout: post
+    title: This is a title of your post
+    date: '2015-06-23 06:17:27'
+    tags: windows linux
+    ---
 
 You should update the title of your post, date and add some tags. In order to use tags, refer to the next section of this Howto.
 
@@ -77,12 +77,12 @@ Let’s name this first tag simply “kasper”.
 1. Create new blank file in root directory of your site named tag-kasper.html
 2. Open this file and write this text:
 
-       ---
-       layout: default
-       title: kasper
-       ---
+        ---
+        layout: default
+        title: kasper
+        ---
 
-       {% include tag-collector.html %}
+        {% include tag-collector.html %}
 
 3. Save the file
 
@@ -92,13 +92,13 @@ Since Jakyll doesn't support it yet, you can't paginate in these collections. I 
 
 ## Disqus integration
 
-1. Open _includes/disqus.html
+1. Open \_includes/disqus.html
 2. Set disqus_shortname. If you have no idea what’s shortname, you probably didn’t set it yet. In that case go to Disqus help: https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
 3. Save the file.
 
 ## Social media integration
 
-1. Open _config.yml file
+1. Open \_config.yml file
 2. Set your nickname for Social Media listed at the very bottom of the file
 3. Save the file
 
