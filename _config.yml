@@ -1,0 +1,40 @@
+name: jan.zavrel.net
+description: thoughts | stories | ideas
+meta_description: "jan.zavrel.net, development blog"
+
+#setup site author or comment this section out to disable it altogether
+################
+author: Jan Zavřel
+author-image: assets/images/author-image.png
+author-image-alt: author image
+
+#setup the cover, if you do not want any, just comment it out
+cover: assets/images/site-cover.png
+
+markdown: redcarpet
+highlighter: pygments
+logo: false
+
+#setup pagination
+################
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "page:num"
+
+baseurl: # the subpath of your site, e.g. /blog
+#url: "http://www.zavrel.net/jekyll" # the base hostname & protocol for your site
+#domain_name: 'http://zavrel.net'
+#google_analytics: 'UA-XXXXXXXX-X'
+
+
+#comments
+disqus-shortname: janzavrelnet
+
+
+#social media
+facebook: zavrelj
+twitter: zavrelj
+github: zavrelj
+linkedin: false
+stackoverflow: false
+bitbucket: zavrelj
