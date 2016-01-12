@@ -1,9 +1,5 @@
-# ghost-for-jekyll-theme
-Theme for Jekyll based on default Ghost theme
-=======
 # Ghost for Jekyll Theme
-
-Thank you for buying this theme! Let’s get started!
+Theme for Jekyll based on default Ghost theme
 
 ## Instalation
 Your theme comes in ZIP archive. First thing you need to do is to unarchive it to the preferred destination on your local machine.
@@ -20,13 +16,13 @@ I suppose you already know how to use Jekyll, and that’s why you were looking 
 
 3) From terminal cd into the directory where you unarchived structure is and run this command:
 
-jekyll build
+    jekyll build
 
 This will create new (or update existing) folder _site where the whole website will be generated and ready for use.
 
 4) To check out locally what your generated site looks like, run this command from terminal:
 
-jekyll serve
+    jekyll serve
 
 This will run server of your site on your localhost and you can easily access it at localhost:4000
 
@@ -34,7 +30,7 @@ This will run server of your site on your localhost and you can easily access it
 
 Just about any traditional web hosting provider will let you upload files to their servers over FTP. To upload generated site to a web host using FTP, simply copy the content of generated _site folder to the root folder of your hosting account. This is most likely to be the httpdocs or public_html folder on most hosting providers.
 
-If you want to use GitHub as your web hosting provider, you can follow my tutorial at https://medium.com/@zavrelj/jekyll-on-github-in-10-seconds-264ca3013e30#.sn23ewkp6
+If you want to use GitHub as your web hosting provider, you can follow this easy tutorial https://pages.github.com/
 
 
 ## Cover image
@@ -68,7 +64,7 @@ date: '2015-06-23 06:17:27'
 tags: windows linux
 ---
 
-You should update the title of your post, date and add some tags. In order to use tags, refer to the next section of this Howto. 
+You should update the title of your post, date and add some tags. In order to use tags, refer to the next section of this Howto.
 
 You can add multiple tags to one post, just DO NOT use commas between them, only space.
 
@@ -112,17 +108,17 @@ Since Jakyll doesn't support it yet, you can't paginate in these collections. I 
 
 All assets like screenshots and images should be stored in assets directory. It’s up to you to create your own structure inside assets. I suggest creating new directory for every post and put all assets of this post inside that directory. If your post is “my-new-post”, then images should be linked like this:
 
-http://yourwebsite.com/assets/my-new-post/kasper-2.0-index.png)
+http://yourwebsite.com/assets/my-new-post/kasper-2.0-index.png
 
 ## Deployment
 
 Once ready, open terminal, cd into root directory of theme and build the website:
 
-jekyll build
+    jekyll build
 
 Than serve it in order to check it out:
 
-jekyll serve
+    jekyll serve
 
 To see results in your web browser, navigate to localhost:4000
 
@@ -130,4 +126,12 @@ To see results in your web browser, navigate to localhost:4000
 
 ## Copyright & License
 
-You should keep the link in the very bottom of the page. I know you probably won’t, but I tried…
+Based on https://github.com/rosario/kasper
+
+Copyright (C) 2016 Ghost Foundation - Released under the MIT License.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
