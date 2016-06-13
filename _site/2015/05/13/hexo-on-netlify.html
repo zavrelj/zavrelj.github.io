@@ -20,6 +20,32 @@
 
 </head>
 <body class="home-template">
+    
+    <header class="main-header no-cover">
+        <nav class="main-nav overlay clearfix">
+            
+
+
+  <a class="back-button" href="/"><i class="fa fa-1x fa-arrow-left"></i> Home</a>
+
+
+
+
+<!-- <a class="subscribe-button" href="/rss.xml"><i class="fa fa-1x fa-rss"></i> Subscribe</a> //-->
+
+
+        </nav>
+        
+        <div class="vertical">
+            <div class="main-header-content inner">
+                <h1 class="page-title">jan.zavrel.net</h1>
+                <h2 class="page-description">
+                 thoughts | stories | ideas 
+                </h2>
+            </div>
+        </div>
+        <a class="scroll-down" href="#content" data-offset="-45"><i class="fa fa-1x fa-chevron-down"></i><span class="hidden">Scroll Down</span></a>
+    </header>
 
     <header class="main-header post-head no-cover">
     <nav class="main-nav  clearfix">
@@ -31,7 +57,7 @@
 
 
 
-<a class="subscribe-button" href="/rss.xml"><i class="fa fa-1x fa-rss"></i> Subscribe</a>
+<!-- <a class="subscribe-button" href="/rss.xml"><i class="fa fa-1x fa-rss"></i> Subscribe</a> //-->
 
 
     </nav>
@@ -50,7 +76,7 @@
                 	
                 		<section class="post-author">
                 			<img class="author-thumb" src="/assets/images/author-image.png" alt="author image" nopin="nopin" />
-                			Jan Zavřel
+                			Jan Zavrel
                 	</section>
                 	
                 	
@@ -82,7 +108,7 @@
 <!--         <header class="post-header">
             <a id="blog-logo" href="">
                 
-                    <span class="blog-title">jan.zavrel.net</span>
+                    <img src="mojelogo" alt="jan.zavrel.net" />
                 
             </a>
         </header> -->
@@ -97,28 +123,43 @@
         <section class="post-content">
             <p>I want to test <a href="http://www.netlify.com">Netlify</a> with <a href="http://www.hexo.io">Hexo</a>. And I want to use <a href="http://www.docker.com">Docker</a> and <a href="http://www.vagrantup.com">Vagrant</a> to separate Hexo environment from my Mac. The idea is to generate content via Hexo running as Docker container inside Ubuntu Snappy in Vagrant. Once the content is generated I will upload it to Netlify server. Pretty complicated, but we will learn a lot along the way.</p>
 
-<p>Let&#39;s start with Vagrant setup. I have Vagrant already installed, if you don&#39;t, it&#39;s pretty straightforward. Just install <a href="http://www.virtualbox.org">VirtualBox</a> and <a href="http://www.vagrantup.com">Vagrant</a>.</p>
+<p>Let’s start with Vagrant setup. I have Vagrant already installed, if you don’t, it’s pretty straightforward. Just install <a href="http://www.virtualbox.org">VirtualBox</a> and <a href="http://www.vagrantup.com">Vagrant</a>.</p>
 
-<p>To setup new project I will create it&#39;s own directory and cd into it:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">mkdir ~/Vagrant/hexo_snappy
+<p>To setup new project I will create it’s own directory and cd into it:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>mkdir ~/Vagrant/hexo_snappy
 cd ~/Vagrant/hexo_snappy
-</code></pre></div>
+</code></pre>
+</div>
+
 <p>Now I will initialize this directory for usage with Snappy:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">vagrant init http://cloud-images.ubuntu.com/snappy/15.04/core/stable/current/core-stable-amd64-vagrant.box
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>vagrant init http://cloud-images.ubuntu.com/snappy/15.04/core/stable/current/core-stable-amd64-vagrant.box
+</code></pre>
+</div>
+
 <p>And run it with:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">vagrant up
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>vagrant up
+</code></pre>
+</div>
+
 <p>This will download Snappy distro from Ubuntu server.</p>
 
 <p>Now you can easily login into Snappy:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">vagrant ssh
-</code></pre></div>
-<hr>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>vagrant ssh
+</code></pre>
+</div>
+
+<hr />
 
 <p>In next step I will install Docker to Snappy. This is really easy. Just type this command:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">sudo snappy install docker
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo snappy install docker
+</code></pre>
+</div>
+
 <p>Now we can download and run Hexo container from Docker image.</p>
 
 <p>No port forwarding in Ubuntu Core yet?!</p>
@@ -127,44 +168,59 @@ cd ~/Vagrant/hexo_snappy
 
 <p>To start I will create slightly modified version of  <a href="https://registry.hub.docker.com/u/simplyintricate/hexo/">simplyintricate/hexo</a> container in order to get access to _config.yml file.</p>
 
-<p>Let&#39;s prepare new hexo folder with new Dockerfile first:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">cd ~/Kitematic
+<p>Let’s prepare new hexo folder with new Dockerfile first:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>cd ~/Kitematic
 mkdir hexo
 cd hexo
 touch Dockerfile
-</code></pre></div>
+</code></pre>
+</div>
+
 <p>I will now download and run simplyintricate/hexo container via Kitematic in order to extract original _config.yml from it to my own hexo folder like this:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">docker cp container-name:/usr/share/nginx/html/_config.yml ~/Kitematic/hexo
-</code></pre></div>
-<hr>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>docker cp container-name:/usr/share/nginx/html/_config.yml ~/Kitematic/hexo
+</code></pre>
+</div>
+
+<hr />
 
 <p>Now I will modify _config.yml to meet my needs, mainly change the site name and the author as well. I need to replace default _config.yml inside container image with my own, so I add instruction to Dockerfile:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">FROM simplyintricate/hexo
+
+<div class="highlighter-rouge"><pre class="highlight"><code>FROM simplyintricate/hexo
 MAINTAINER Jan Zavrel &lt;jan@zavrel.net&gt;
 
 ADD _config.yml /usr/share/nginx/html/_config.yml
-</code></pre></div>
-<hr>
+</code></pre>
+</div>
 
-<p>and build my new image from Kitematic&#39;s terminal (small whale icon):</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">cd ~/Kitematic/hexo
+<hr />
+
+<p>and build my new image from Kitematic’s terminal (small whale icon):</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>cd ~/Kitematic/hexo
 docker build -t zavrelj/hexo .
-</code></pre></div>
+</code></pre>
+</div>
+
 <p>Now I can run my container:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">docker run -t -i zavrelj/hexo /bin/bash
-</code></pre></div>
-<p>It won&#39;t display anything in browser for the first time, because:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>docker run -t -i zavrelj/hexo /bin/bash
+</code></pre>
+</div>
+
+<p>It won’t display anything in browser for the first time, because:</p>
 
 <ol>
-<li>Ports are not mapped.</li>
+  <li>Ports are not mapped.</li>
 </ol>
 
-<p>I don&#39;t know why, but I have a workaround.</p>
+<p>I don’t know why, but I have a workaround.</p>
 
 <p>Just stop the container and restart it from Kitematic UI.</p>
 
 <ol>
-<li>Volumes are not enabled, so there is no folder structure yet, because container name is randomly generated.</li>
+  <li>Volumes are not enabled, so there is no folder structure yet, because container name is randomly generated.</li>
 </ol>
 
 <p>Just click on <strong>usr</strong> folder of running hexo container inside Kitematic. This will create folder structure inside ~/Kitematic folder under container name.</p>
@@ -173,7 +229,7 @@ docker build -t zavrelj/hexo .
 
 <p>Once I have my initial setup done, I can move to creating some content.</p>
 
-<p><strong>To do so, just run hexo generate aaaand... there&#39;s an error....</strong></p>
+<p><strong>To do so, just run hexo generate aaaand… there’s an error….</strong></p>
 
         </section>
 
@@ -228,9 +284,10 @@ docker build -t zavrelj/hexo .
 
       <section class="copyright">
           &copy; 2015 <a href="">jan.zavrel.net</a>
+          <a href="/about.html">about</a>
       </section>
       <section class="poweredby">
-          Made with <a href="http://jekyllrb.com">Jekyll</a> using <a href="http://themeforest.net/user/zavrelj">Ghost for Jekyll</a> theme
+          Made with <a href="http://jekyllrb.com">Jekyll</a> using <a href="https://github.com/zavrelj/ghost-for-jekyll-theme">Ghost for Jekyll Theme</a>
       </section>
     </footer>
 

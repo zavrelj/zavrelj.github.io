@@ -20,6 +20,32 @@
 
 </head>
 <body class="home-template">
+    
+    <header class="main-header no-cover">
+        <nav class="main-nav overlay clearfix">
+            
+
+
+  <a class="back-button" href="/"><i class="fa fa-1x fa-arrow-left"></i> Home</a>
+
+
+
+
+<!-- <a class="subscribe-button" href="/rss.xml"><i class="fa fa-1x fa-rss"></i> Subscribe</a> //-->
+
+
+        </nav>
+        
+        <div class="vertical">
+            <div class="main-header-content inner">
+                <h1 class="page-title">jan.zavrel.net</h1>
+                <h2 class="page-description">
+                 thoughts | stories | ideas 
+                </h2>
+            </div>
+        </div>
+        <a class="scroll-down" href="#content" data-offset="-45"><i class="fa fa-1x fa-chevron-down"></i><span class="hidden">Scroll Down</span></a>
+    </header>
 
     <header class="main-header post-head no-cover">
     <nav class="main-nav  clearfix">
@@ -31,7 +57,7 @@
 
 
 
-<a class="subscribe-button" href="/rss.xml"><i class="fa fa-1x fa-rss"></i> Subscribe</a>
+<!-- <a class="subscribe-button" href="/rss.xml"><i class="fa fa-1x fa-rss"></i> Subscribe</a> //-->
 
 
     </nav>
@@ -50,7 +76,7 @@
                 	
                 		<section class="post-author">
                 			<img class="author-thumb" src="/assets/images/author-image.png" alt="author image" nopin="nopin" />
-                			Jan Zavřel
+                			Jan Zavrel
                 	</section>
                 	
                 	
@@ -82,7 +108,7 @@
 <!--         <header class="post-header">
             <a id="blog-logo" href="">
                 
-                    <span class="blog-title">jan.zavrel.net</span>
+                    <img src="mojelogo" alt="jan.zavrel.net" />
                 
             </a>
         </header> -->
@@ -95,19 +121,18 @@
         <!-- <h1 class="post-title">SharePoint on Windows Server 2012</h1> -->
 
         <section class="post-content">
-            <p>Today we will leave Linux world and jump right into Windows. Let&#39;s install SharePoint 2013 (<strong>SP</strong>). It&#39;s quite easy and for free. Register to <a href="https://www.dreamspark.com">Dreamspark</a> service where you can evaluate all sorts of Microsoft&#39;s products for 180 days. Download ISO of Windows Server 2012 Datacenter (Standard will work as well) and install it as a virtual machine (<strong>VM</strong>) using VirtualBox or Parallels Desktop or VMware Fusion (google it, if you hear it for the first time). Download <a href="https://www.microsoft.com/en-us/download/details.aspx?id=35488">Sharepoint Foundation 2013</a>.</p>
+            <p>Today we will leave Linux world and jump right into Windows. Let’s install SharePoint 2013 (<strong>SP</strong>). It’s quite easy and for free. Register to <a href="https://www.dreamspark.com">Dreamspark</a> service where you can evaluate all sorts of Microsoft’s products for 180 days. Download ISO of Windows Server 2012 Datacenter (Standard will work as well) and install it as a virtual machine (<strong>VM</strong>) using VirtualBox or Parallels Desktop or VMware Fusion (google it, if you hear it for the first time). Download <a href="https://www.microsoft.com/en-us/download/details.aspx?id=35488">Sharepoint Foundation 2013</a>.</p>
 
-<p>Ready? Let&#39;s start!</p>
+<p>Ready? Let’s start!</p>
 
 <p>First thing we want to do after Windows Server is installed is to change the name of our server.
 This is easily done via Server Manager where you click on ComputerName in <strong>Configure this local server</strong>.</p>
 
 <!-- _includes/image.html -->
-
-<div class="image-wrapper" >
+<div class="image-wrapper">
 
     <a href="/assets/sharepoint-on-windows-server-2012/sp_01.png" title="" target="_blank">
-      <img src="/assets/sharepoint-on-windows-server-2012/sp_01.png" alt=""/>
+      <img src="/assets/sharepoint-on-windows-server-2012/sp_01.png" alt="" />
     </a>
 
     
@@ -116,11 +141,10 @@ This is easily done via Server Manager where you click on ComputerName in <stron
 </div>
 
 <!-- _includes/image.html -->
-
-<div class="image-wrapper" >
+<div class="image-wrapper">
 
     <a href="/assets/sharepoint-on-windows-server-2012/sp_02.png" title="" target="_blank">
-      <img src="/assets/sharepoint-on-windows-server-2012/sp_02.png" alt=""/>
+      <img src="/assets/sharepoint-on-windows-server-2012/sp_02.png" alt="" />
     </a>
 
     
@@ -137,11 +161,10 @@ This is easily done via Server Manager where you click on ComputerName in <stron
 <p>To install <strong>SP</strong> double click installer and hit <strong>Install software prerequisites</strong> link.</p>
 
 <!-- _includes/image.html -->
-
-<div class="image-wrapper" >
+<div class="image-wrapper">
 
     <a href="/assets/sharepoint-on-windows-server-2012/sp_03.png" title="" target="_blank">
-      <img src="/assets/sharepoint-on-windows-server-2012/sp_03.png" alt=""/>
+      <img src="/assets/sharepoint-on-windows-server-2012/sp_03.png" alt="" />
     </a>
 
     
@@ -156,11 +179,10 @@ This is easily done via Server Manager where you click on ComputerName in <stron
 <p>Choose stand-alone version.</p>
 
 <!-- _includes/image.html -->
-
-<div class="image-wrapper" >
+<div class="image-wrapper">
 
     <a href="/assets/sharepoint-on-windows-server-2012/sp_04.png" title="" target="_blank">
-      <img src="/assets/sharepoint-on-windows-server-2012/sp_04.png" alt=""/>
+      <img src="/assets/sharepoint-on-windows-server-2012/sp_04.png" alt="" />
     </a>
 
     
@@ -171,11 +193,10 @@ This is easily done via Server Manager where you click on ComputerName in <stron
 <p>When the installation is successfully completed, run SP Configuration Wizard as suggested (just leave the option ticked and click Next). It will probably end with failure, but it will also populate folders we need to setup access rights, so we will run it anyway.</p>
 
 <!-- _includes/image.html -->
-
-<div class="image-wrapper" >
+<div class="image-wrapper">
 
     <a href="/assets/sharepoint-on-windows-server-2012/sp_05.png" title="" target="_blank">
-      <img src="/assets/sharepoint-on-windows-server-2012/sp_05.png" alt=""/>
+      <img src="/assets/sharepoint-on-windows-server-2012/sp_05.png" alt="" />
     </a>
 
     
@@ -186,26 +207,37 @@ This is easily done via Server Manager where you click on ComputerName in <stron
 <p>If sample data creation fail as expected, you need to do these steps:</p>
 
 <ol>
-<li><p>Go to C:\Program Files\Windows SharePoint Services\15.0\Data</p></li>
-<li><p>Right-click on the <em>Analytics_GUID</em> folder and choose <strong>Properties</strong></p></li>
-<li><p>On the <em>Sharing</em> tab click <strong>Advanced Sharing</strong></p></li>
-<li><p>Tick the box to share the folder (don’t change the share name) and click the Permissions button</p></li>
-<li><p>Click <strong>Add</strong>, enter WSS_ADMIN_WPG and click <strong>Check Names</strong>, then <strong>OK</strong>.  Grant the user <em>Full Control</em> and click <strong>Apply</strong>, <strong>OK</strong> in both windows.</p></li>
-<li><p>Close the window and run SharePoint Products Configuration Wizard again (you will find it in Start menu)</p></li>
+  <li>
+    <p>Go to C:\Program Files\Windows SharePoint Services\15.0\Data</p>
+  </li>
+  <li>
+    <p>Right-click on the <em>Analytics_GUID</em> folder and choose <strong>Properties</strong></p>
+  </li>
+  <li>
+    <p>On the <em>Sharing</em> tab click <strong>Advanced Sharing</strong></p>
+  </li>
+  <li>
+    <p>Tick the box to share the folder (don’t change the share name) and click the Permissions button</p>
+  </li>
+  <li>
+    <p>Click <strong>Add</strong>, enter WSS_ADMIN_WPG and click <strong>Check Names</strong>, then <strong>OK</strong>.  Grant the user <em>Full Control</em> and click <strong>Apply</strong>, <strong>OK</strong> in both windows.</p>
+  </li>
+  <li>
+    <p>Close the window and run SharePoint Products Configuration Wizard again (you will find it in Start menu)</p>
+  </li>
 </ol>
 
-<p>Everything should be ready now, except you can&#39;t access SP Central Administration, because you probably do not have password for your Windows Server account set.</p>
+<p>Everything should be ready now, except you can’t access SP Central Administration, because you probably do not have password for your Windows Server account set.</p>
 
 <p>Hit CTRL+ALT+DELETE and click Change password, leave the old one blank and set the new one.</p>
 
 <p>Go to http://ws2012:10801 in your browser (or run SP Central Administration from Start menu) and you should be able to log in with username <strong>WS2012\username</strong> and your new password</p>
 
 <!-- _includes/image.html -->
-
-<div class="image-wrapper" >
+<div class="image-wrapper">
 
     <a href="/assets/sharepoint-on-windows-server-2012/sp_06.png" title="" target="_blank">
-      <img src="/assets/sharepoint-on-windows-server-2012/sp_06.png" alt=""/>
+      <img src="/assets/sharepoint-on-windows-server-2012/sp_06.png" alt="" />
     </a>
 
     
@@ -214,11 +246,10 @@ This is easily done via Server Manager where you click on ComputerName in <stron
 </div>
 
 <!-- _includes/image.html -->
-
-<div class="image-wrapper" >
+<div class="image-wrapper">
 
     <a href="/assets/sharepoint-on-windows-server-2012/sp_07.png" title="" target="_blank">
-      <img src="/assets/sharepoint-on-windows-server-2012/sp_07.png" alt=""/>
+      <img src="/assets/sharepoint-on-windows-server-2012/sp_07.png" alt="" />
     </a>
 
     
@@ -229,17 +260,17 @@ This is easily done via Server Manager where you click on ComputerName in <stron
 <p>To get to vanilla SP Homepage, just type http://ws2012</p>
 
 <!-- _includes/image.html -->
-
-<div class="image-wrapper" >
+<div class="image-wrapper">
 
     <a href="/assets/sharepoint-on-windows-server-2012/sp_08.png" title="" target="_blank">
-      <img src="/assets/sharepoint-on-windows-server-2012/sp_08.png" alt=""/>
+      <img src="/assets/sharepoint-on-windows-server-2012/sp_08.png" alt="" />
     </a>
 
     
         <p class="image-caption"></p>
     
 </div>
+
 
         </section>
 
@@ -294,9 +325,10 @@ This is easily done via Server Manager where you click on ComputerName in <stron
 
       <section class="copyright">
           &copy; 2015 <a href="">jan.zavrel.net</a>
+          <a href="/about.html">about</a>
       </section>
       <section class="poweredby">
-          Made with <a href="http://jekyllrb.com">Jekyll</a> using <a href="http://themeforest.net/user/zavrelj">Ghost for Jekyll</a> theme
+          Made with <a href="http://jekyllrb.com">Jekyll</a> using <a href="https://github.com/zavrelj/ghost-for-jekyll-theme">Ghost for Jekyll Theme</a>
       </section>
     </footer>
 

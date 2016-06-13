@@ -20,6 +20,32 @@
 
 </head>
 <body class="home-template">
+    
+    <header class="main-header no-cover">
+        <nav class="main-nav overlay clearfix">
+            
+
+
+  <a class="back-button" href="/"><i class="fa fa-1x fa-arrow-left"></i> Home</a>
+
+
+
+
+<!-- <a class="subscribe-button" href="/rss.xml"><i class="fa fa-1x fa-rss"></i> Subscribe</a> //-->
+
+
+        </nav>
+        
+        <div class="vertical">
+            <div class="main-header-content inner">
+                <h1 class="page-title">jan.zavrel.net</h1>
+                <h2 class="page-description">
+                 thoughts | stories | ideas 
+                </h2>
+            </div>
+        </div>
+        <a class="scroll-down" href="#content" data-offset="-45"><i class="fa fa-1x fa-chevron-down"></i><span class="hidden">Scroll Down</span></a>
+    </header>
 
     <header class="main-header post-head no-cover">
     <nav class="main-nav  clearfix">
@@ -31,7 +57,7 @@
 
 
 
-<a class="subscribe-button" href="/rss.xml"><i class="fa fa-1x fa-rss"></i> Subscribe</a>
+<!-- <a class="subscribe-button" href="/rss.xml"><i class="fa fa-1x fa-rss"></i> Subscribe</a> //-->
 
 
     </nav>
@@ -50,7 +76,7 @@
                 	
                 		<section class="post-author">
                 			<img class="author-thumb" src="/assets/images/author-image.png" alt="author image" nopin="nopin" />
-                			Jan Zavřel
+                			Jan Zavrel
                 	</section>
                 	
                 	
@@ -80,7 +106,7 @@
 <!--         <header class="post-header">
             <a id="blog-logo" href="">
                 
-                    <span class="blog-title">jan.zavrel.net</span>
+                    <img src="mojelogo" alt="jan.zavrel.net" />
                 
             </a>
         </header> -->
@@ -96,113 +122,198 @@
             <p>Ok, this time a little bit more about Git. I will show you some basic commands.</p>
 
 <p>Create a new directory in your home called <strong>octobox</strong>.</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">cd ~/octobox
+
+<div class="highlighter-rouge"><pre class="highlight"><code>cd ~/octobox
 git init
-</code></pre></div>
+</code></pre>
+</div>
+
 <p>This will create local repository in <strong>~/octobox/.git</strong>.</p>
 
 <p>Now you can add some file to that directory:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">touch readme.txt
+
+<div class="highlighter-rouge"><pre class="highlight"><code>touch readme.txt
 open readme.txt
-</code></pre></div>
+</code></pre>
+</div>
+
 <p>Write some text, then save.</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">git status
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git status
+</code></pre>
+</div>
+
 <p>Will show you that you have untracked file, so stage it:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">git add readme.txt
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git add readme.txt
+</code></pre>
+</div>
+
 <p>Or if you have more that one:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">git add --all
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git add --all
+</code></pre>
+</div>
+
 <p>Now you can commit it:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">git commit -m &quot;first commit&quot;
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git commit -m "first commit"
+</code></pre>
+</div>
+
 <p>After you make more commits, you can go through them via</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">git log
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git log
+</code></pre>
+</div>
+
 <p>To see unstaged changes, type:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">git diff
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git diff
+</code></pre>
+</div>
+
 <p>For staged but not committed changes, type:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">git diff --staged
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git diff --staged
+</code></pre>
+</div>
+
 <p>If you want to reset modifications of the staged file, type:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">git checkout -- filename
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git checkout -- filename
+</code></pre>
+</div>
+
 <p>This will get a rid of all changes since last commit.</p>
 
 <p>If you stage some file by mistake or want to stop tracking changes, you can unstage it by</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">git reset HEAD filename
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git reset HEAD filename
+</code></pre>
+</div>
+
 <p>And that file will be no longer tracked for changes.</p>
 
 <p>To stage the file with changes and commit it at the same time, just use:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">git commit -a -m &quot;your message&quot;
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git commit -a -m "your message"
+</code></pre>
+</div>
+
 <p>But beware that this will not commit new untracked file you did not staged yet.</p>
 
 <p>If that happens, first stage new file and then you can ammend it to the same commit:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">git commit --amend -m &quot;changes message&quot;
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git commit --amend -m "changes message"
+</code></pre>
+</div>
+
 <p>Nice explanation of the concept is here:</p>
 
 <blockquote>
-<p>Git essentially has 4 main statuses for the files in your local repo:</p>
+  <p>Git essentially has 4 main statuses for the files in your local repo:</p>
+</blockquote>
 
-<p><strong>untracked</strong>: The file is new, Git knows nothing about it. If you git add   <file>, it becomes:</p>
+<blockquote>
+  <p><strong>untracked</strong>: The file is new, Git knows nothing about it. If you git add   <file>, it becomes:</file></p>
+</blockquote>
 
-<p><strong>staged</strong>: Now Git knows the file (tracked), but also made it part of the next commit batch (called the index). If you git commit, it becomes:</p>
+<blockquote>
+  <p><strong>staged</strong>: Now Git knows the file (tracked), but also made it part of the next commit batch (called the index). If you git commit, it becomes:</p>
+</blockquote>
 
-<p><strong>unchanged</strong>: The file has not changed since its last commit. If you modify it, it becomes:</p>
+<blockquote>
+  <p><strong>unchanged</strong>: The file has not changed since its last commit. If you modify it, it becomes:</p>
+</blockquote>
 
-<p><strong>unstaged</strong>: Modified but not part of the next commit yet. You can stage it again with git add
+<blockquote>
+  <p><strong>unstaged</strong>: Modified but not part of the next commit yet. You can stage it again with git add
 As you can see, a git add will track untracked files, and stage any file.</p>
+</blockquote>
 
-<p>Also: You can untrack an uncommited file with git rm --cached filename and unstage a staged file with git reset HEAD <file></p>
+<blockquote>
+  <p>Also: You can untrack an uncommited file with git rm –cached filename and unstage a staged file with git reset HEAD <file></file></p>
 </blockquote>
 
 <p>Credits to <a href="http://stackoverflow.com/users/1307721/emmanuel-joubaud">Emmanuel Joubaud</a></p>
 
 <p>If you happen to forget some files in commit, you can easily get it back to staged state this way:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">git reset --soft HEAD^
-</code></pre></div>
-<p>Undo last commit and all changes completely:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">git reset --hard HEAD^
-</code></pre></div>
-<p>Undo last two commits:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">git reset --hard HEAD^^
-</code></pre></div>
-<p>To add new remote repository:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">git remote add origin git@example.com:example/repository.git
-</code></pre></div>
-<p>To push your commit to remote repository type:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">git push -u origin master
-</code></pre></div>
-<p>If it&#39;s for the first time, you might be asked for your username and password.</p>
 
-<p>Let&#39;s move to branching.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>git reset --soft HEAD^
+</code></pre>
+</div>
+
+<p>Undo last commit and all changes completely:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git reset --hard HEAD^
+</code></pre>
+</div>
+
+<p>Undo last two commits:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git reset --hard HEAD^^
+</code></pre>
+</div>
+
+<p>To add new remote repository:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git remote add origin git@example.com:example/repository.git
+</code></pre>
+</div>
+
+<p>To push your commit to remote repository type:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git push -u origin master
+</code></pre>
+</div>
+
+<p>If it’s for the first time, you might be asked for your username and password.</p>
+
+<p>Let’s move to branching.</p>
 
 <p>To create a branch, just type:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">git branch name-of-branch
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git branch name-of-branch
+</code></pre>
+</div>
+
 <p>To switch to that branch type:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">git checkout name-of-branch
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git checkout name-of-branch
+</code></pre>
+</div>
+
 <p>To switch back to master branch - you guessed it:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">git checkout master
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git checkout master
+</code></pre>
+</div>
+
 <p>To see the list of branch and the active one, type:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">git branch
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git branch
+</code></pre>
+</div>
+
 <p>To merge name-of-branch to master, make sure you switched to master and then type:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">git merge name-of-branch
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git merge name-of-branch
+</code></pre>
+</div>
+
 <p>Then you can safely delete that branch:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">git branch -d name-of-branch
-</code></pre></div>
-<p>To create new branch (let&#39;s say <strong>admin</strong>) and switch to it at the same time, type:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">git checkout -b admin
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git branch -d name-of-branch
+</code></pre>
+</div>
+
+<p>To create new branch (let’s say <strong>admin</strong>) and switch to it at the same time, type:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git checkout -b admin
+</code></pre>
+</div>
+
         </section>
 
         
@@ -273,9 +384,10 @@ As you can see, a git add will track untracked files, and stage any file.</p>
 
       <section class="copyright">
           &copy; 2015 <a href="">jan.zavrel.net</a>
+          <a href="/about.html">about</a>
       </section>
       <section class="poweredby">
-          Made with <a href="http://jekyllrb.com">Jekyll</a> using <a href="http://themeforest.net/user/zavrelj">Ghost for Jekyll</a> theme
+          Made with <a href="http://jekyllrb.com">Jekyll</a> using <a href="https://github.com/zavrelj/ghost-for-jekyll-theme">Ghost for Jekyll Theme</a>
       </section>
     </footer>
 

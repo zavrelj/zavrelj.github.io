@@ -20,6 +20,32 @@
 
 </head>
 <body class="home-template">
+    
+    <header class="main-header no-cover">
+        <nav class="main-nav overlay clearfix">
+            
+
+
+  <a class="back-button" href="/"><i class="fa fa-1x fa-arrow-left"></i> Home</a>
+
+
+
+
+<!-- <a class="subscribe-button" href="/rss.xml"><i class="fa fa-1x fa-rss"></i> Subscribe</a> //-->
+
+
+        </nav>
+        
+        <div class="vertical">
+            <div class="main-header-content inner">
+                <h1 class="page-title">jan.zavrel.net</h1>
+                <h2 class="page-description">
+                 thoughts | stories | ideas 
+                </h2>
+            </div>
+        </div>
+        <a class="scroll-down" href="#content" data-offset="-45"><i class="fa fa-1x fa-chevron-down"></i><span class="hidden">Scroll Down</span></a>
+    </header>
 
     <header class="main-header post-head no-cover">
     <nav class="main-nav  clearfix">
@@ -31,7 +57,7 @@
 
 
 
-<a class="subscribe-button" href="/rss.xml"><i class="fa fa-1x fa-rss"></i> Subscribe</a>
+<!-- <a class="subscribe-button" href="/rss.xml"><i class="fa fa-1x fa-rss"></i> Subscribe</a> //-->
 
 
     </nav>
@@ -50,7 +76,7 @@
                 	
                 		<section class="post-author">
                 			<img class="author-thumb" src="/assets/images/author-image.png" alt="author image" nopin="nopin" />
-                			Jan Zavřel
+                			Jan Zavrel
                 	</section>
                 	
                 	
@@ -84,7 +110,7 @@
 <!--         <header class="post-header">
             <a id="blog-logo" href="">
                 
-                    <span class="blog-title">jan.zavrel.net</span>
+                    <img src="mojelogo" alt="jan.zavrel.net" />
                 
             </a>
         </header> -->
@@ -97,7 +123,7 @@
         <!-- <h1 class="post-title">Git</h1> -->
 
         <section class="post-content">
-            <p>You know Git, right? If not, head <a href="http://try.github.io">here</a> and get the gist of it. We will wait...</p>
+            <p>You know Git, right? If not, head <a href="http://try.github.io">here</a> and get the gist of it. We will wait…</p>
 
 <p>Ready? OK.</p>
 
@@ -105,13 +131,17 @@
 
 <p>Then you might end up with a question like this one: How the hell do I know, which project is pushed to GitHub and which one to Bitbucket?</p>
 
-<p>Well, it&#39;s quite simple. It&#39;s all stored inside hidden .git directory which resides in the root of your project directory. There you will find what you are looking for.</p>
+<p>Well, it’s quite simple. It’s all stored inside hidden .git directory which resides in the root of your project directory. There you will find what you are looking for.</p>
 
 <p>Just cd to your Project directory and type:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"> cat .git/config
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code> cat .git/config
+</code></pre>
+</div>
+
 <p>You will get something like this:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"> [core]
+
+<div class="highlighter-rouge"><pre class="highlight"><code> [core]
    repositoryformatversion = 0
    filemode = true
    bare = false
@@ -119,44 +149,58 @@
    ignorecase = true
    precomposeunicode = true
 
- [remote &quot;origin&quot;]
+ [remote "origin"]
    url = https://github.com/zavrelj/LearningGitHub.git
    fetch = +refs/heads/*:refs/remotes/origin/*
-</code></pre></div>
-<p>And there it is - remote origin shows you where it is pushed. In this case it&#39;s pushed to my repository on github.com server.</p>
+</code></pre>
+</div>
+
+<p>And there it is - remote origin shows you where it is pushed. In this case it’s pushed to my repository on github.com server.</p>
 
 <p>While this one:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"> [core]
+
+<div class="highlighter-rouge"><pre class="highlight"><code> [core]
    repositoryformatversion = 0
    filemode = true
    bare = false
    logallrefupdates = true
    ignorecase = true
    precomposeunicode = true
- [remote &quot;origin&quot;]
+ [remote "origin"]
    url = https://zavrelj@bitbucket.org/zavrelj/ds.git
    fetch = +refs/heads/*:refs/remotes/origin/*
- [branch &quot;master&quot;]
+ [branch "master"]
    remote = origin
    merge = refs/heads/master
-</code></pre></div>
+</code></pre>
+</div>
+
 <p>is pushed to my repository on bitbucket.org.</p>
 
 <p>And this one:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"> [core]
+
+<div class="highlighter-rouge"><pre class="highlight"><code> [core]
    repositoryformatversion = 0
    filemode = true
    bare = false
    logallrefupdates = true
    ignorecase = true
    precomposeunicode = true
-</code></pre></div>
-<p>hasn&#39;t been pushed anywhere yet since I only locally created it by:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"> git init ProjectName
-</code></pre></div>
+</code></pre>
+</div>
+
+<p>hasn’t been pushed anywhere yet since I only locally created it by:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code> git init ProjectName
+</code></pre>
+</div>
+
 <p>When you use GUI apps and add repository, they will update projects .git/config file and add their own remote origin. So if you want you repository on Bitbucket, just add it to Bitbucket app, if on GitHub, add it to GitHub app or, you can do it for every project manually like this:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"> git remote add origin https://github.com/yourname/ProjectName
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code> git remote add origin https://github.com/yourname/ProjectName
+</code></pre>
+</div>
+
         </section>
 
         
@@ -210,9 +254,10 @@
 
       <section class="copyright">
           &copy; 2015 <a href="">jan.zavrel.net</a>
+          <a href="/about.html">about</a>
       </section>
       <section class="poweredby">
-          Made with <a href="http://jekyllrb.com">Jekyll</a> using <a href="http://themeforest.net/user/zavrelj">Ghost for Jekyll</a> theme
+          Made with <a href="http://jekyllrb.com">Jekyll</a> using <a href="https://github.com/zavrelj/ghost-for-jekyll-theme">Ghost for Jekyll Theme</a>
       </section>
     </footer>
 

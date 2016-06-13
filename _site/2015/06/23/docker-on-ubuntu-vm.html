@@ -20,6 +20,32 @@
 
 </head>
 <body class="home-template">
+    
+    <header class="main-header no-cover">
+        <nav class="main-nav overlay clearfix">
+            
+
+
+  <a class="back-button" href="/"><i class="fa fa-1x fa-arrow-left"></i> Home</a>
+
+
+
+
+<!-- <a class="subscribe-button" href="/rss.xml"><i class="fa fa-1x fa-rss"></i> Subscribe</a> //-->
+
+
+        </nav>
+        
+        <div class="vertical">
+            <div class="main-header-content inner">
+                <h1 class="page-title">jan.zavrel.net</h1>
+                <h2 class="page-description">
+                 thoughts | stories | ideas 
+                </h2>
+            </div>
+        </div>
+        <a class="scroll-down" href="#content" data-offset="-45"><i class="fa fa-1x fa-chevron-down"></i><span class="hidden">Scroll Down</span></a>
+    </header>
 
     <header class="main-header post-head no-cover">
     <nav class="main-nav  clearfix">
@@ -31,7 +57,7 @@
 
 
 
-<a class="subscribe-button" href="/rss.xml"><i class="fa fa-1x fa-rss"></i> Subscribe</a>
+<!-- <a class="subscribe-button" href="/rss.xml"><i class="fa fa-1x fa-rss"></i> Subscribe</a> //-->
 
 
     </nav>
@@ -50,7 +76,7 @@
                 	
                 		<section class="post-author">
                 			<img class="author-thumb" src="/assets/images/author-image.png" alt="author image" nopin="nopin" />
-                			Jan Zavřel
+                			Jan Zavrel
                 	</section>
                 	
                 	
@@ -80,7 +106,7 @@
 <!--         <header class="post-header">
             <a id="blog-logo" href="">
                 
-                    <span class="blog-title">jan.zavrel.net</span>
+                    <img src="mojelogo" alt="jan.zavrel.net" />
                 
             </a>
         </header> -->
@@ -93,28 +119,44 @@
         <!-- <h1 class="post-title">Docker on Ubuntu virtual machine</h1> -->
 
         <section class="post-content">
-            <p>To install Docker on Ubuntu you need slightly more than you&#39;ll get from official installation guide.</p>
+            <p>To install Docker on Ubuntu you need slightly more than you’ll get from official installation guide. I will show you what.</p>
 
 <p>I tried to put it all together.</p>
 
 <ol>
-<li><p>Get wget if you don&#39;t have it already</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">sudo apt-get update
-sudo apt-get install wget
-</code></pre></div></li>
-<li><p>Install Docker</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">wget -qO- https://get.docker.com/ | sh
-</code></pre></div></li>
-<li><p>Finish setup</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">sudo apt-get -y install lxc
-sudo gpasswd -a ${USER} docker
-newgrp docker
-sudo service docker restart
-</code></pre></div></li>
-<li><p>Optionally install these two dependencies if the above does not work</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">sudo apt-get -y install apparmor cgroup-lite
-sudo service docker restart
-</code></pre></div></li>
+  <li>
+    <p>Get wget if you don’t have it already</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code> sudo apt-get update
+ sudo apt-get install wget
+</code></pre>
+    </div>
+  </li>
+  <li>
+    <p>Install Docker</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code> wget -qO- https://get.docker.com/ | sh
+</code></pre>
+    </div>
+  </li>
+  <li>
+    <p>Finish setup</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code> sudo apt-get -y install lxc
+ sudo gpasswd -a ${USER} docker
+ newgrp docker
+ sudo service docker restart
+</code></pre>
+    </div>
+  </li>
+  <li>
+    <p>Optionally install these two dependencies if the above does not work</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code> sudo apt-get -y install apparmor cgroup-lite
+ sudo service docker restart
+</code></pre>
+    </div>
+  </li>
 </ol>
 
         </section>
@@ -187,9 +229,10 @@ sudo service docker restart
 
       <section class="copyright">
           &copy; 2015 <a href="">jan.zavrel.net</a>
+          <a href="/about.html">about</a>
       </section>
       <section class="poweredby">
-          Made with <a href="http://jekyllrb.com">Jekyll</a> using <a href="http://themeforest.net/user/zavrelj">Ghost for Jekyll</a> theme
+          Made with <a href="http://jekyllrb.com">Jekyll</a> using <a href="https://github.com/zavrelj/ghost-for-jekyll-theme">Ghost for Jekyll Theme</a>
       </section>
     </footer>
 

@@ -20,6 +20,32 @@
 
 </head>
 <body class="home-template">
+    
+    <header class="main-header no-cover">
+        <nav class="main-nav overlay clearfix">
+            
+
+
+  <a class="back-button" href="/"><i class="fa fa-1x fa-arrow-left"></i> Home</a>
+
+
+
+
+<!-- <a class="subscribe-button" href="/rss.xml"><i class="fa fa-1x fa-rss"></i> Subscribe</a> //-->
+
+
+        </nav>
+        
+        <div class="vertical">
+            <div class="main-header-content inner">
+                <h1 class="page-title">jan.zavrel.net</h1>
+                <h2 class="page-description">
+                 thoughts | stories | ideas 
+                </h2>
+            </div>
+        </div>
+        <a class="scroll-down" href="#content" data-offset="-45"><i class="fa fa-1x fa-chevron-down"></i><span class="hidden">Scroll Down</span></a>
+    </header>
 
     <header class="main-header post-head no-cover">
     <nav class="main-nav  clearfix">
@@ -31,7 +57,7 @@
 
 
 
-<a class="subscribe-button" href="/rss.xml"><i class="fa fa-1x fa-rss"></i> Subscribe</a>
+<!-- <a class="subscribe-button" href="/rss.xml"><i class="fa fa-1x fa-rss"></i> Subscribe</a> //-->
 
 
     </nav>
@@ -50,7 +76,7 @@
                 	
                 		<section class="post-author">
                 			<img class="author-thumb" src="/assets/images/author-image.png" alt="author image" nopin="nopin" />
-                			Jan Zavřel
+                			Jan Zavrel
                 	</section>
                 	
                 	
@@ -82,7 +108,7 @@
 <!--         <header class="post-header">
             <a id="blog-logo" href="">
                 
-                    <span class="blog-title">jan.zavrel.net</span>
+                    <img src="mojelogo" alt="jan.zavrel.net" />
                 
             </a>
         </header> -->
@@ -95,51 +121,67 @@
         <!-- <h1 class="post-title">Jekyll on GitHub in 10 seconds</h1> -->
 
         <section class="post-content">
-            <p>Today I will show you very straightforward way to setup <a href="http://jekyllrb.com">Jekyll</a> on <a href="https://pages.github.com">GitHub Pages</a>. It&#39;s so easy I wonder why something like this is not available on Jekyll site.</p>
+            <p>Today I will show you very straightforward way to setup <a href="http://jekyllrb.com">Jekyll</a> on <a href="https://pages.github.com">GitHub Pages</a>. It’s so easy I wonder why something like this is not available on Jekyll site.</p>
 
 <p>Prerequisities to save a lot of time:</p>
 
 <ol>
-<li>Login to your GitHub account or create one.</li>
-<li>Download and install GitHub client for Mac.</li>
-<li>If you don&#39;t already have Xcode, download and install Xcode Command-Line Tools, <a href="http://railsapps.github.io/xcode-command-line-tools.html">here is how</a>.</li>
-<li>Whenever I use <strong>zavrelj</strong> in this guide, use your own GitHub account name instead.</li>
+  <li>Login to your GitHub account or create one.</li>
+  <li>Download and install GitHub client for Mac.</li>
+  <li>If you don’t already have Xcode, download and install Xcode Command-Line Tools, <a href="http://railsapps.github.io/xcode-command-line-tools.html">here is how</a>.</li>
+  <li>Whenever I use <strong>zavrelj</strong> in this guide, use your own GitHub account name instead.</li>
 </ol>
 
-<p>Ready? Fine. Let&#39;s get to it:</p>
+<p>Ready? Fine. Let’s get to it:</p>
 
 <ol>
-<li>Fire up your browser and go to your GitHub account.</li>
-<li>Create new repository</li>
-<li>Name it <strong>zavrelj</strong>.github.io</li>
-<li>Hit &quot;Create repository&quot; button</li>
+  <li>Fire up your browser and go to your GitHub account.</li>
+  <li>Create new repository</li>
+  <li>Name it <strong>zavrelj</strong>.github.io</li>
+  <li>Hit “Create repository” button</li>
 </ol>
 
-<p><img src="/assets/jekyll-on-github-in-10-seconds/git-1-2.png" alt=""></p>
+<p><img src="/assets/jekyll-on-github-in-10-seconds/git-1-2.png" alt="" /></p>
 
 <ol>
-<li>On new page hit &quot;Set up in Desktop&quot; button</li>
+  <li>On new page hit “Set up in Desktop” button</li>
 </ol>
 
-<p><img src="/assets/jekyll-on-github-in-10-seconds/git-2-2.png" alt=""></p>
+<p><img src="/assets/jekyll-on-github-in-10-seconds/git-2-2.png" alt="" /></p>
 
 <ol>
-<li><p>GitHub for Mac will automatically start now asking you where to clone your repository. Locate ~/GitHub and hit &quot;Clone&quot; button.</p></li>
-<li><p>Fire up you terminal and type:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">sudo gem install jekyll
+  <li>
+    <p>GitHub for Mac will automatically start now asking you where to clone your repository. Locate ~/GitHub and hit “Clone” button.</p>
+  </li>
+  <li>
+    <p>Fire up you terminal and type:</p>
 
-cd ~/GitHub/zavrelj.github.io
+    <div class="highlighter-rouge"><pre class="highlight"><code> sudo gem install jekyll
 
-jekyll new .
-</code></pre></div></li>
-<li><p>Back to GitHub for Mac client where you have already new files waiting for commitment.       <img src="/assets/jekyll-on-github-in-10-seconds/git-4.png" alt=""></p></li>
-<li><p>Write some description and hit &quot;Commit to master&quot; button.</p></li>
-<li><p>Hit &quot;Publish/Sync&quot; button</p></li>
-<li><p>Back to your browser and go to http://zavrelj.github.io</p></li>
-<li><p>Welcome to Jekyll!</p></li>
+ cd ~/GitHub/zavrelj.github.io
+
+ jekyll new .
+</code></pre>
+    </div>
+  </li>
+  <li>
+    <p>Back to GitHub for Mac client where you have already new files waiting for commitment.       <img src="/assets/jekyll-on-github-in-10-seconds/git-4.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Write some description and hit “Commit to master” button.</p>
+  </li>
+  <li>
+    <p>Hit “Publish/Sync” button</p>
+  </li>
+  <li>
+    <p>Back to your browser and go to http://zavrelj.github.io</p>
+  </li>
+  <li>
+    <p>Welcome to Jekyll!</p>
+  </li>
 </ol>
 
-<p><img src="/assets/jekyll-on-github-in-10-seconds/git-5.png" alt=""></p>
+<p><img src="/assets/jekyll-on-github-in-10-seconds/git-5.png" alt="" /></p>
 
         </section>
 
@@ -194,9 +236,10 @@ jekyll new .
 
       <section class="copyright">
           &copy; 2015 <a href="">jan.zavrel.net</a>
+          <a href="/about.html">about</a>
       </section>
       <section class="poweredby">
-          Made with <a href="http://jekyllrb.com">Jekyll</a> using <a href="http://themeforest.net/user/zavrelj">Ghost for Jekyll</a> theme
+          Made with <a href="http://jekyllrb.com">Jekyll</a> using <a href="https://github.com/zavrelj/ghost-for-jekyll-theme">Ghost for Jekyll Theme</a>
       </section>
     </footer>
 

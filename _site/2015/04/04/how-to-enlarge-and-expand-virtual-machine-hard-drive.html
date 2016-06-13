@@ -20,6 +20,32 @@
 
 </head>
 <body class="home-template">
+    
+    <header class="main-header no-cover">
+        <nav class="main-nav overlay clearfix">
+            
+
+
+  <a class="back-button" href="/"><i class="fa fa-1x fa-arrow-left"></i> Home</a>
+
+
+
+
+<!-- <a class="subscribe-button" href="/rss.xml"><i class="fa fa-1x fa-rss"></i> Subscribe</a> //-->
+
+
+        </nav>
+        
+        <div class="vertical">
+            <div class="main-header-content inner">
+                <h1 class="page-title">jan.zavrel.net</h1>
+                <h2 class="page-description">
+                 thoughts | stories | ideas 
+                </h2>
+            </div>
+        </div>
+        <a class="scroll-down" href="#content" data-offset="-45"><i class="fa fa-1x fa-chevron-down"></i><span class="hidden">Scroll Down</span></a>
+    </header>
 
     <header class="main-header post-head no-cover">
     <nav class="main-nav  clearfix">
@@ -31,7 +57,7 @@
 
 
 
-<a class="subscribe-button" href="/rss.xml"><i class="fa fa-1x fa-rss"></i> Subscribe</a>
+<!-- <a class="subscribe-button" href="/rss.xml"><i class="fa fa-1x fa-rss"></i> Subscribe</a> //-->
 
 
     </nav>
@@ -50,7 +76,7 @@
                 	
                 		<section class="post-author">
                 			<img class="author-thumb" src="/assets/images/author-image.png" alt="author image" nopin="nopin" />
-                			Jan Zavřel
+                			Jan Zavrel
                 	</section>
                 	
                 	
@@ -80,7 +106,7 @@
 <!--         <header class="post-header">
             <a id="blog-logo" href="">
                 
-                    <span class="blog-title">jan.zavrel.net</span>
+                    <img src="mojelogo" alt="jan.zavrel.net" />
                 
             </a>
         </header> -->
@@ -95,18 +121,21 @@
         <section class="post-content">
             <p>When you install virtual machine, you have to decide what size of virtual drive to set, but sometimes you might later realize that it was not enough.</p>
 
-<p>In that case you can quite easily enlarge your virtual hard drive and then expand your operating system to newly added free space. This article will show you how to do it with VirtualBox&#39;s .vdi file. But there&#39;s more. Usually you would need to boot from external drive, but not this time. The whole process can be done from terminal. So let&#39;s start.</p>
+<p>In that case you can quite easily enlarge your virtual hard drive and then expand your operating system to newly added free space. This article will show you how to do it with VirtualBox’s .vdi file. But there’s more. Usually you would need to boot from external drive, but not this time. The whole process can be done from terminal. So let’s start.</p>
 
 <p>Shutdown your virtual machine, open terminal on your physical machine, cd into your VirtualBox VMs folder, locate folder with your virtual machine, cd into it and run this command:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">VBoxManage modifyhd YOUR_HARD_DISK.vdi --resize SIZE_IN_MB  
-</code></pre></div>
-<p>YOUR<em>HARD</em>DRIVE will be the name of your .vdi file
-SIZE<em>IN</em>MB will be new size, like 16000</p>
 
-<p>That&#39;s it. Your virtual hard drive is enlarged. Now you need to expand your virtual machine into newly added free space.
-Run your Ubuntu virtual machine, open it&#39;s terminal and run this command:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">sudo fdisk /dev/sda
-</code></pre></div>
+<div class="highlighter-rouge"><pre class="highlight"><code>VBoxManage modifyhd YOUR_HARD_DISK.vdi --resize SIZE_IN_MB   YOUR_HARD_DRIVE will be the name of your .vdi file SIZE_IN_MB will be new size, like 16000
+</code></pre>
+</div>
+
+<p>That’s it. Your virtual hard drive is enlarged. Now you need to expand your virtual machine into newly added free space.
+Run your Ubuntu virtual machine, open it’s terminal and run this command:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo fdisk /dev/sda
+</code></pre>
+</div>
+
 <p>Type <strong>p</strong> to get the list of all partitions and make a note of the start cylinder of <strong>/dev/sda1</strong> <em>(usually 2048)</em></p>
 
 <p>Type <strong>d</strong> to delete the swap partition, then delete the <strong>/dev/sda1</strong> partition</p>
@@ -116,10 +145,13 @@ Run your Ubuntu virtual machine, open it&#39;s terminal and run this command:</p
 <p>Type <strong>a</strong> to set the bootable flag on your new <strong>/dev/sda1</strong></p>
 
 <p>Type <strong>w</strong> to write the new partition table to disk</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">sudo reboot
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo reboot
 sudo resize2fs /dev/sda1  
-</code></pre></div>
-<p>That&#39;s it! You have expanded your virtual machine. Check the size of your virtual hard drive. It reads 16 GB now.</p>
+</code></pre>
+</div>
+
+<p>That’s it! You have expanded your virtual machine. Check the size of your virtual hard drive. It reads 16 GB now.</p>
 
         </section>
 
@@ -174,9 +206,10 @@ sudo resize2fs /dev/sda1
 
       <section class="copyright">
           &copy; 2015 <a href="">jan.zavrel.net</a>
+          <a href="/about.html">about</a>
       </section>
       <section class="poweredby">
-          Made with <a href="http://jekyllrb.com">Jekyll</a> using <a href="http://themeforest.net/user/zavrelj">Ghost for Jekyll</a> theme
+          Made with <a href="http://jekyllrb.com">Jekyll</a> using <a href="https://github.com/zavrelj/ghost-for-jekyll-theme">Ghost for Jekyll Theme</a>
       </section>
     </footer>
 

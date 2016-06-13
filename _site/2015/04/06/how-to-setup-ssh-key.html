@@ -20,6 +20,32 @@
 
 </head>
 <body class="home-template">
+    
+    <header class="main-header no-cover">
+        <nav class="main-nav overlay clearfix">
+            
+
+
+  <a class="back-button" href="/"><i class="fa fa-1x fa-arrow-left"></i> Home</a>
+
+
+
+
+<!-- <a class="subscribe-button" href="/rss.xml"><i class="fa fa-1x fa-rss"></i> Subscribe</a> //-->
+
+
+        </nav>
+        
+        <div class="vertical">
+            <div class="main-header-content inner">
+                <h1 class="page-title">jan.zavrel.net</h1>
+                <h2 class="page-description">
+                 thoughts | stories | ideas 
+                </h2>
+            </div>
+        </div>
+        <a class="scroll-down" href="#content" data-offset="-45"><i class="fa fa-1x fa-chevron-down"></i><span class="hidden">Scroll Down</span></a>
+    </header>
 
     <header class="main-header post-head no-cover">
     <nav class="main-nav  clearfix">
@@ -31,7 +57,7 @@
 
 
 
-<a class="subscribe-button" href="/rss.xml"><i class="fa fa-1x fa-rss"></i> Subscribe</a>
+<!-- <a class="subscribe-button" href="/rss.xml"><i class="fa fa-1x fa-rss"></i> Subscribe</a> //-->
 
 
     </nav>
@@ -50,7 +76,7 @@
                 	
                 		<section class="post-author">
                 			<img class="author-thumb" src="/assets/images/author-image.png" alt="author image" nopin="nopin" />
-                			Jan Zavřel
+                			Jan Zavrel
                 	</section>
                 	
                 	
@@ -80,7 +106,7 @@
 <!--         <header class="post-header">
             <a id="blog-logo" href="">
                 
-                    <span class="blog-title">jan.zavrel.net</span>
+                    <img src="mojelogo" alt="jan.zavrel.net" />
                 
             </a>
         </header> -->
@@ -93,7 +119,7 @@
         <!-- <h1 class="post-title">How to setup SSH key</h1> -->
 
         <section class="post-content">
-            <p>Password is so old school. It&#39;s not too hard to guess it, you have to remember it or write it down somewhere. If you need to connect your computer with another computer (server), there is a better and safer way.</p>
+            <p>Password is so old school. It’s not too hard to guess it, you have to remember it or write it down somewhere. If you need to connect your computer with another computer (server), there is a better and safer way.</p>
 
 <p>You can use secure shell or SSH and in order to tell server, that it is in fact you who is trying to talk to it, you will give it your public key. Then, when you connect to server, public key is paired with private key which is safely stored on your computer.</p>
 
@@ -102,37 +128,55 @@
 <p>You might already have ssh key generated on your machine and not know about it. If you followed some tutorials, for example my own <a href="">Laravel/Homestead installation guide</a>, it is possible you still have your own ssh key already generated. To find out if this is the case is quite easy.</p>
 
 <p>Open Terminal end enter:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">    ls -al ~/.ssh
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    ls -al ~/.ssh
+</code></pre>
+</div>
+
 <p>If you already have ssh key generated, you will get a list of files (at least <strong>id_rsa</strong> and <strong>id_rsa.pub</strong>).</p>
 
-<p>If you get error message, that ~/.ssh does not exist, you didn&#39;t create any ssh key yet, which is exactly what we&#39;re about to change now.</p>
+<p>If you get error message, that ~/.ssh does not exist, you didn’t create any ssh key yet, which is exactly what we’re about to change now.</p>
 
 <p>To generate public/private pair of rsa key, simply enter this line to Terminal and hit <strong>ENTER</strong>:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">    ssh-keygen -t rsa -C &quot;your_email@example.com&quot;
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>	ssh-keygen -t rsa -C "your_email@example.com"
+</code></pre>
+</div>
+
 <p>You should use your own e-mail of course, like smith@gmail.com. Leave Terminal to save your ssh key to default location and simply hit <strong>ENTER</strong> when asked.</p>
 
-<p>Then you will be asked for passphrase. I strongly suggest you type it, even though it&#39;s possible to leave it empty. Strong passphrase will protect your ssh key. Think about it as another layer of security. Anyone who gain access to your computer has automatically access to all services that are set up to connect via SSH if passphrase is not set.</p>
+<p>Then you will be asked for passphrase. I strongly suggest you type it, even though it’s possible to leave it empty. Strong passphrase will protect your ssh key. Think about it as another layer of security. Anyone who gain access to your computer has automatically access to all services that are set up to connect via SSH if passphrase is not set.</p>
 
-<p>You should store your passphrase securely. I suggest 1Password for example. If you&#39;re not sure later what your passphrase is, you can easily test it by typing</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">   ssh-keygen -y
-</code></pre></div>
-<p>Terminal will ask you where the file with the key is (by default you just hit ENTER), then type your passphrase. If it&#39;s right, you&#39;ll get your key, otherwise you will get <strong>load failed</strong> error message.</p>
+<p>You should store your passphrase securely. I suggest 1Password for example. If you’re not sure later what your passphrase is, you can easily test it by typing</p>
 
-<p>If you see fingerprint of your ssh key on Terminal now, you have sucessfully created public/private rsa key pair. Now it&#39;s good idea to add it to your Mac Keychain, so you don&#39;t have to enter it every time you need it.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>   ssh-keygen -y
+</code></pre>
+</div>
+
+<p>Terminal will ask you where the file with the key is (by default you just hit ENTER), then type your passphrase. If it’s right, you’ll get your key, otherwise you will get <strong>load failed</strong> error message.</p>
+
+<p>If you see fingerprint of your ssh key on Terminal now, you have sucessfully created public/private rsa key pair. Now it’s good idea to add it to your Mac Keychain, so you don’t have to enter it every time you need it.</p>
 
 <p>To that ensure that ssh-agent is enabled (should be on Mac since Leopard):</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">    eval &quot;$(ssh-agent -s)&quot;
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>	eval "$(ssh-agent -s)"
+</code></pre>
+</div>
+
 <p>and then enter this:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">    ssh-add ~/.ssh/id_rsa
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>	ssh-add ~/.ssh/id_rsa
+</code></pre>
+</div>
+
 <p>Now you have your SSH key safely stored in Keychain. You can use it to connect to your service of choice.</p>
 
 <p>To get your SSH key to your clipboard in order to paste to specific form, just type:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"> pbcopy &lt; ~/.ssh/id_rsa.pub
-</code></pre></div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code> pbcopy &lt; ~/.ssh/id_rsa.pub
+</code></pre>
+</div>
+
         </section>
 
         
@@ -186,9 +230,10 @@
 
       <section class="copyright">
           &copy; 2015 <a href="">jan.zavrel.net</a>
+          <a href="/about.html">about</a>
       </section>
       <section class="poweredby">
-          Made with <a href="http://jekyllrb.com">Jekyll</a> using <a href="http://themeforest.net/user/zavrelj">Ghost for Jekyll</a> theme
+          Made with <a href="http://jekyllrb.com">Jekyll</a> using <a href="https://github.com/zavrelj/ghost-for-jekyll-theme">Ghost for Jekyll Theme</a>
       </section>
     </footer>
 
