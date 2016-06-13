@@ -6,7 +6,7 @@ tags: docker
 disqus: true
 ---
 
-To install Docker on Ubuntu you need slightly more than you'll get from official installation guide.
+To install Docker on Ubuntu you need slightly more than you'll get from official installation guide. I will show you what.
 
 I tried to put it all together.
 
