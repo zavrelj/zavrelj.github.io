@@ -9,7 +9,7 @@ author-image: assets/images/author-image.png
 author-image-alt: author image
 
 #setup the cover, if you do not want any, just comment it out
-cover: assets/images/site-cover.png
+#cover: assets/images/site-cover.png
 
 #markdown: redcarpet
 #highlighter: pygments
