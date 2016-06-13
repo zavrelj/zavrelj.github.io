@@ -1,8 +1,0 @@
----
-layout: post
-title: Git post
-date: '2016-06-15 06:17:27'
-tags: git
----
-
-This is the post I have created directly via GitHub web interface.
