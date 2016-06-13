@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Laravel/Homestead - the real installation guide
-date: '2015-03-30 06:17:27'
-tags: laravel
+title: Git post
+date: '2016-06-15 06:17:27'
+tags: git
 ---
 
 I got stuck when following [Say Hello to Laravel Homestead 2.0](https://laracasts.com/lessons/say-hello-to-laravel-homestead-two) tutorial, because there is one huge omission. Here is the complete step by step guide.
