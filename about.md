@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: About me
 logo: this is logo
 ---
