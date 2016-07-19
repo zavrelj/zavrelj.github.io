@@ -158,7 +158,7 @@ $("#contact-form").validate({
       error: function() {
         $('#image-loader').fadeOut();
         $('#message-warning').html(msg);
-       $('#message-warning').fadeIn();
+        $('#message-warning').fadeIn();
       }
     });
   }
