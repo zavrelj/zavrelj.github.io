@@ -914,9 +914,9 @@ ul#nav li.current a { color: #F06000; }
 #contact textarea:focus,
 #contact select:focus {
 	color: #fff;
-	background-color: #11ABB0;
+	background-color: #CC5200;
 }
-#contact button.submit {
+#contact input .submit {
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	color:#fff;
@@ -928,12 +928,13 @@ ul#nav li.current a { color: #F06000; }
 	border-radius: 3px;
    margin-left: 26%;
 }
-#contact button.submit:hover {
+#contact input:hover,
+#contact textarea:hover {
 	color: #0D0D0D;
-	background: #fff;
+	background: #CC5200;
 }
 #contact span.required {
-	color: #11ABB0;
+	color: #CC5200;
 	font-size: 13px;
 }
 #message-warning, #message-success {
