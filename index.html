@@ -1,74 +1,561 @@
----
-layout: default
-title: Home
-about: 'about'
----
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
 
-<main id="content" class="content" role="main">
+   <!--- Basic Page Needs
+   ================================================== -->
+  <meta charset="utf-8">
+	<title>jan.zavrel.net</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
+</head>
+
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Works</a></li>
+            <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">Jan Zavrel</h1>
+            <h3>I am awesome.<br>
+            Let's <a class="smoothscroll" href="#about">start scrolling</a>
+            too see why and know more <a class="smoothscroll" href="#about">about me</a>.</h3>
+            <hr />
+            <ul class="social">
+               <li><a href="https://www.facebook.com/zavrelj"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://www.twitter.com/zavrelj"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="https://www.instagram.com/zavrelj"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="https://www.github.com/zavrelj"><i class="fa fa-github"></i></a></li>
+            </ul>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
 
 
-    <div class="extra-pagination inner">
-        {% include pagination.html %}
-    </div>
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
 
-    {% for post in paginator.posts %}
+      <div class="row">
 
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-        </header>
-        <section class="post-excerpt">
-            {{ post.excerpt }} <a class="read-more" href="{{ site.baseurl }}{{ post.url }}">&raquo;</a>
-        </section>
-        <footer class="post-meta">
-            
-            
-            {% if post.author %}
-                <section class="post-author">
-                <img class="author-thumb" src="{{ site.baseurl }}/{{ post.author-image }}" alt="{{ post.author-image-alt }}" nopin="nopin" />
-                {{ post.author }}
-                </section>
-            
-            {%else%}
-                
-                {% if site.author %}
-                	<section class="post-author">
-                	<img class="author-thumb" src="{{ site.baseurl }}/{{ site.author-image }}" alt="{{ site.author-image-alt }}" nopin="nopin" />
-                	{{ site.author }}
-                	</section>
-                {% endif %}
-                	
-            {% endif %}
-            
-            
+         <div class="three columns">
 
+            <img class="profile-pic"  src="images/profilepic.png" alt="" />
 
-            <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
-                {{ post.date | date_to_string }}
-            </time>
+         </div>
 
-            <!-- check if post has any tags //-->
-            {% if post.tags.size > 0 %}
+         <div class="nine columns main-col">
 
-              <!-- generate link for every tag //-->
-              {% for tag in post.tags %}
-                  <i class="fa fa-1x fa-tag"></i> <a href="{{ site.baseurl }}/tag-{{ tag }}.html">{{ tag | capitalize}}</a>&nbsp;&nbsp;
-              {% endfor %}
+            <h2>About Me</h2>
 
-            {% endif %}
+            <p>I started my IT career as a Pascal programming language student in 1994. Later I discovered the potential of the web and founded with my colleague WEBXP company which offered websites for businesses.
+              <br>
+              In 2000 I started working for German-based company at that time, where I was the part of team creating the top of the line webshop for than famous Breuninger Mode & Beauty online kaufen.
+              <br>
+              I also started my very own project and designed, developed and published one of the first so called discussion servers, that were very popular in my country years before the Facebook became worldwide success.
+              <br>
+              In 2008 when iPhone SDK was introduced I moved to mobile apps world and soon published my first verb dictionary for iPhone.
+              <br>
+              In 2015 I founded BOHEMIAPPS which evolved from simple iOS applications platform to technology education project.
+              <br>
+              I love to learn new things and I love to share more knowledge with others even more. I believe the student is only as successful in understanding the topic as is his teacher in explaining it. In other words - there's no bad student, only the bad instructor.
+              <br>
+              My mission is to share what I know and present it in best possible way I can provide so my students can benefit from it. I respect their time and hope to bring them only the best quality education.
+            </p>
 
-        </footer>
-    </article>
+            <div class="row">
 
+               <div class="columns contact-details">
 
-    {% endfor %}
+                  <h2>Contact Details</h2>
+                  <p class="address">
+						              <span>Jan Zavrel</span><br>
+						              <span><a href="mailto:jan@zavrel.net">jan@zavrel.net</a></span><br>
+                          <span><a href="http://jan.zavrel.net">jan.zavrel.net</a></span>
+					        </p>
 
+               </div>
 
+               <!--
+               <div class="columns download">
+                  <p>
+                     <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                  </p>
+               </div>
+              -->
+            </div> <!-- end row -->
 
+         </div> <!-- end .main-col -->
 
+      </div>
 
+   </section> <!-- About Section End-->
 
 
-    {% include pagination.html %}
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
 
-</main>
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1>Check Out Some of My Works.</h1>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+          	   <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-01" title="">
+                        <img alt="" src="images/portfolio/zavrel.net-portfolio-get-more-customers-800x800.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>How to get more customers</h5>
+                              <p>Marketing</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-02" title="">
+                        <img alt="" src="images/portfolio/zavrel.net-portfolio-learn-sketch-800x800.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Learn Sketch in 30 minutes</h5>
+                              <p>Design</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-03" title="">
+                        <img alt="" src="images/portfolio/zavrel.net-portfolio-zombie-run-800x800.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Zombie Run iPhone maze game</h5>
+                              <p>iOS development</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-04" title="">
+                        <img alt="" src="images/portfolio/zavrel.net-portfolio-catch-the-snake-800x800.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Catch The Snake iOS puzzle game</h5>
+                              <p>iOS development</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+
+
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+
+         <!-- Modal Popup
+	      --------------------------------------------------------------- -->
+
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/zavrel.net-portfolio-get-more-customers-1050x700.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>How to get more customers - 3 great tools for growing your online audience</h4>
+			      <p>Online course that will show you 3 amazing free to use tools to grow your online audience.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Marketing</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://skl.sh/29S9c71">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-01 End -->
+
+         <div id="modal-02" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/zavrel.net-portfolio-learn-sketch-1050x700.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>Learn Sketch in 30 minutes</h4>
+			      <p>Learn quickly how to use this great vector-based editor. All the essential features explained.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Design</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://skl.sh/29CHX1E">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-02 End -->
+
+         <div id="modal-03" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/zavrel.net-portfolio-zombie-run-1050x700.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>Zombie Run - learn how to make scary maze game for iPhone</h4>
+			      <p>Learn how to create your own scary zombie game for iPhone. Step by step guide from scrath to the App Store.</p>
+               <span class="categories"><i class="fa fa-tag"></i>iOS development</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://skl.sh/29Hvf1M">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-03 End -->
+
+         <div id="modal-04" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/zavrel.net-portfolio-catch-the-snake-1050x700.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>Catch The Snake - iOS game from scratch to App Store</h4>
+			      <p>Learn how to create iOS maze game for iPhone and iPad. Start with a blank project and see the whole process right to the App Store.</p>
+               <span class="categories"><i class="fa fa-tag"></i>iOS development</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://skl.sh/25RZ55I">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-04 End -->
+
+
+
+      </div> <!-- row End -->
+
+   </section> <!-- Portfolio Section End-->
+
+
+   <!-- Call-To-Action Section
+   ================================================== -->
+   <section id="call-to-action">
+
+      <div class="row">
+
+         <div class="two columns header-col">
+
+            <h1><span>Get my $10 handbook for free.</span></h1>
+
+         </div>
+
+         <div class="seven columns">
+
+            <h2><a href="http://land.bohemiapps.com/handbook">7 Rules For Success Of Online Instructors.</a></h2>
+            <p>As a thank you for visiting my site, get my <span>$20</span> handbook for <span>FREE</span>.</p>
+
+         </div>
+
+         <div class="three columns action">
+
+            <a href="http://land.bohemiapps.com/handbook" class="button">Get It Now</a>
+
+         </div>
+
+      </div>
+
+   </section> <!-- Call-To-Action Section End-->
+
+
+   <!-- Testimonials Section
+   ================================================== -->
+   <section id="testimonials">
+
+      <div class="text-container">
+
+         <div class="row">
+
+            <div class="two columns header-col">
+
+               <h1><span>Client Testimonials</span></h1>
+
+            </div>
+
+            <div class="ten columns flex-container">
+
+               <div class="flexslider">
+
+                  <ul class="slides">
+
+                     <li>
+                        <blockquote>
+                           <p>
+                             Still at half project but teacher is awesome! As someone who don`t like to draw at all he gave us option to make the snake or take already made one that made me happy. There are no errors in the project, everything is clear and sound. Will take his other courses in the future. Thumb Up !!!
+                           </p>
+                           <cite><a href="https://www.udemy.com/user/konstantin-nenadov/">Konstantin Nenadov</a> on Catch The Snake Course</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                     <li>
+                        <blockquote>
+                           <p>
+                             Great way to get up to speed with Sketch right away. It helps if you have some knowledge of graphic editing programs to get through it even faster. I love the format and style. Instructor is very clear. No fluff just what you need.
+                           </p>
+                           <cite><a href="https://www.udemy.com/user/magda/">Magda Diaz</a> on Learn Sketch in 30 minutes</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                     <li>
+                        <blockquote>
+                           <p>
+                             Awesome introduction class to using Sketch. A++
+                           </p>
+                           <cite><a href="https://www.udemy.com/user/mirkocukich/">Mirko Cukich</a> on Learn Sketch in 30 minutes</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                  </ul>
+
+               </div> <!-- div.flexslider ends -->
+
+            </div> <!-- div.flex-container ends -->
+
+         </div> <!-- row ends -->
+
+       </div>  <!-- text-container ends -->
+
+   </section> <!-- Testimonials Section End-->
+
+   <!-- Call-To-Action Light Section
+   ================================================== -->
+   <section id="call-to-action-light">
+
+      <div class="row">
+
+         <div class="two columns header-col">
+
+            <h1><span>Get my $10 handbook for free.</span></h1>
+
+         </div>
+
+         <div class="seven columns">
+
+            <h2><a href="http://land.bohemiapps.com/handbook">Learn all you can for just $0.99!</a></h2>
+            <p>As a Skillshare partner I have a <span>very special deal</span> for you. You can get access to all 6.000+ classes Skillshare offers for just <span>$0.99</span> for full <span>3 months</span>.</p>
+            <p>You will get access to <span>every</span> single class there is. You can enroll and start learning new skills immediatelly.</p>
+            <p>If you're not happy, you can <span>cancel</span> your membership <span>anytime</span> during those 3 months and you <span>will not pay</span> anything more!</p>
+            <p>This is something you simply do not want to miss.</p>
+            <p><span>FULL THREE MONTHS</span> of premium access to <span>EVERYTHING</span> Skillshare offers for <span>ONLY $0.99</span>.</p>
+
+            <a href="http://skl.sh/29S9c71" class="button">Get This Deal Now</a>
+         </div>
+
+         <div class="three columns action">
+
+
+         </div>
+
+      </div>
+
+   </section> <!-- Call-To-Action Section End-->
+
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+         <div class="row section-head">
+
+            <div class="two columns header-col">
+
+               <h1><span>Get In Touch.</span></h1>
+
+            </div>
+
+            <div class="ten columns">
+
+                  <p class="lead">
+                  I am always happy to help. If you have any questions regarding my work, don't hesitate to ask. I reply to every e-mail.
+                  </p>
+
+            </div>
+
+         </div>
+
+         <div class="row">
+
+            <div class="eight columns">
+
+               <!-- form -->
+               <form action="" method="post" id="contactForm" name="contactForm">
+					<fieldset>
+
+                  <div>
+						   <label for="contactName">Name <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactName" name="contactName">
+                  </div>
+
+                  <div>
+						   <label for="contactEmail">Email <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                  </div>
+
+                  <div>
+						   <label for="contactSubject">Subject</label>
+						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+                  </div>
+
+                  <div>
+                     <label for="contactMessage">Message <span class="required">*</span></label>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                  </div>
+
+                  <div>
+                     <button class="submit">Submit</button>
+                     <span id="image-loader">
+                        <img alt="" src="images/loader.gif">
+                     </span>
+                  </div>
+
+					</fieldset>
+				   </form> <!-- Form End -->
+
+               <!-- contact-warning -->
+               <div id="message-warning"> Error boy</div>
+               <!-- contact-success -->
+				   <div id="message-success">
+                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+				   </div>
+
+            </div>
+
+
+            <aside class="four columns footer-widgets">
+
+               <div class="widget widget_contact">
+
+				      </div>
+
+               <div class="widget widget_tweets">
+
+                  <h4 class="widget-title">Latest Tweets</h4>
+
+                  <a class="twitter-timeline" data-width="220" data-theme="dark" data-link-color="#CC5200" data-tweet-limit="3" href="https://twitter.com/zavrelj">Tweets by zavrelj</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+		         </div>
+
+            </aside>
+
+      </div>
+
+   </section> <!-- Contact Section End-->
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href="http://www.facebook.com/zavrelj"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="http://www.twitter.com/zavrelj"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="http://www.instagram.com/zavrelj"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="http://www.github.com/zavrelj"><i class="fa fa-github"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; Copyright 2016 Jan Zavrel</li>
+               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
+
+</html>
