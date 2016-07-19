@@ -133,6 +133,37 @@
       randomize: false,
    });
 
+
+/*----------------------------------------------------*/
+/*	jQuery validate
+------------------------------------------------------*/
+
+$("#contact-form").validate({
+  submitHandler: function(form) {
+    $.ajax({
+      url: "https://formspree.io/jan@zavrel.net",
+      method: "POST",
+      data: {
+        name: $(form).find("input[name='name']").val(),
+        _replyto: $(form).find("input[name='_replyto']").val(),
+        message: $(form).find("textarea[name='message']").val()
+      },
+      dataType: "json",
+      success: function() {
+        $('#image-loader').fadeOut();
+        $('#message-warning').hide();
+        $('#contact-form').fadeOut();
+        $('#message-success').fadeIn();
+      },
+      error: function() {
+        $('#image-loader').fadeOut();
+        $('#message-warning').html(msg);
+       $('#message-warning').fadeIn();
+      }
+    });
+  }
+});
+
 /*----------------------------------------------------*/
 /*	contact form
 ------------------------------------------------------*/

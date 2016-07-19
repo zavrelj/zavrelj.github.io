@@ -451,17 +451,17 @@
             <div class="eight columns">
 
                <!-- form -->
-               <form action="" method="post" id="contactForm" name="contactForm">
+               <form action="" method="post" id="contact-form" name="contact-form">
 					        <fieldset>
 
                   <div>
     						   <label for="contactName">Name <span class="required">*</span></label>
-    						   <input type="text" value="" size="35" id="contactName" name="contactName">
+    						   <input type="text" value="" size="35" id="contactName" name="contactName" required>
                   </div>
 
                   <div>
     						   <label for="contactEmail">Email <span class="required">*</span></label>
-    						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+    						   <input type="email" value="" size="35" id="contactEmail" name="contactEmail" required>
                   </div>
 
                   <div>
@@ -471,7 +471,7 @@
 
                   <div>
                      <label for="contactMessage">Message <span class="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" required></textarea>
                   </div>
 
                   <div>
@@ -497,6 +497,17 @@
                <div id="message-warning"> Error boy</div>
                <!-- contact-success -->
           		 <div id="message-success"><i class="fa fa-check"></i>Your message was sent, thank you!</div>
+
+               <!-- Hidden message to show if contact is successful. -->
+                <div id="submit-success" class="collapse">
+                  Message received! I'll be in touch.
+                </div>
+
+                <!-- Hidden message to show if user encounters errors. -->
+                <div id="submit-errors" class="collapse">
+                  It looks like there was an error submitting the form.
+                  Please try again later.
+                </div>
             </div>
 
 
@@ -549,6 +560,7 @@
    <script src="js/jquery.flexslider.js"></script>
    <script src="js/waypoints.js"></script>
    <script src="js/jquery.fittext.js"></script>
+   <script src="js/jquery.validate.js"></script>
    <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
 
