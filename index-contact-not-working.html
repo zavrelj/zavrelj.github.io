@@ -448,10 +448,10 @@
 
          <div class="row">
 
-            <div class="eight columns">
+            <div class="twelve columns">
 
                <!-- form -->
-               <form action="https://formspree.io/jan@zavrel.net" method="post" id="contact-form2" name="contact-form2">
+               <form action="" method="post" id="contact-form2" name="contact-form">
 					        <fieldset>
 
                   <div>
@@ -479,11 +479,40 @@
                     <input type="hidden" name="_subject" value="jan.zavrel.net contact form" />
                     <input type="hidden" name="_next" value="http://land.bohemiapps.com/handbook" />
                     <input type="submit" class="submit" name="submit" value="Send">
+
+                     <!--
+                    <button class="submit">Send</button>
+
+                     <span id="image-loader">
+                        <img alt="" src="images/loader.gif">
+                     </span>
+                   -->
                   </div>
 
 					        </fieldset>
 				        </form> <!-- Form End -->
 
+
+
+
+
+
+
+               <!-- contact-warning -->
+               <div id="message-warning"> Error boy</div>
+               <!-- contact-success -->
+          		 <div id="message-success"><i class="fa fa-check"></i>Your message was sent, thank you!</div>
+
+               <!-- Hidden message to show if contact is successful. -->
+                <div id="submit-success" class="collapse">
+                  Message received! I'll be in touch.
+                </div>
+
+                <!-- Hidden message to show if user encounters errors. -->
+                <div id="submit-errors" class="collapse">
+                  It looks like there was an error submitting the form.
+                  Please try again later.
+                </div>
             </div>
 
 
@@ -499,6 +528,20 @@
 
    </section> <!-- Contact Section End-->
 
+   <section id="contact2">
+   <form id="contact-form">
+       <label for="name">Name</label>
+       <input class="form-control" type="text" name="name" required placeholder="Name">
+
+       <label for="email">Email</label>
+       <input class="form-control" type="email" name="_replyto" required placeholder="email@address.com">
+
+       <label for="message">Message</label>
+       <textarea class="form-control" name="message" placeholder="Message" required rows="5"></textarea>
+
+       <input type="submit" value="Send">
+   </form>
+ </section>
 
 
    <!-- footer
