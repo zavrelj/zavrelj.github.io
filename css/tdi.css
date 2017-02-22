@@ -1,0 +1,60 @@
+/* ------------------------------------------------------------------ */
+/* f. THE DIGITAL INSTRUCTOR Section
+/* ------------------------------------------------------------------ */
+
+#tdi {
+   background: #FFFFFF;
+   padding-top: 66px;
+   padding-bottom: 48px;
+}
+#tdi h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   color: #fff;
+}
+#tdi h1 span { display: none; }
+#tdi .header-col h1:before {
+   font-family: 'FontAwesome';
+   content: "\f0ac";
+	padding-right: 10px;
+	font-size: 72px;
+   line-height: 72px;
+   text-align: left;
+   float: left;
+   color: #fff;
+}
+#tdi .action {
+   margin-top: 12px;
+}
+#tdi h2 {
+   font: 28px/36px 'opensans-bold', sans-serif;
+   color: #2C3E50;
+   margin-bottom: 6px;
+}
+#tdi h2 a {
+   color: inherit;
+}
+
+#tdi p {
+   color: #2B2B2B;
+   font-size: 17px;
+}
+
+#tdi img {
+   width: 100%;
+}
+
+#tdi .button {
+	color:#fff;
+   background: #D0021B;
+}
+#tdi .button:hover,
+#tdi .button:active {
+   background: #2C3E50;
+   color: #fff;
+}
+#tdi p span {
+	font-family: 'opensans-semibold', sans-serif;
+	color: #D8D8D8;
+}
