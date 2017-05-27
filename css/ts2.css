@@ -1,0 +1,60 @@
+/* ------------------------------------------------------------------ */
+/* f. THE SYSTEM2 Section
+/* ------------------------------------------------------------------ */
+
+#ts2 {
+   background: #ebeeee;
+   padding-top: 66px;
+   padding-bottom: 48px;
+}
+#ts2 h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   color: #fff;
+}
+#ts2 h1 span { display: none; }
+#ts2 .header-col h1:before {
+   font-family: 'FontAwesome';
+   content: "\f0ac";
+	padding-right: 10px;
+	font-size: 72px;
+   line-height: 72px;
+   text-align: left;
+   float: left;
+   color: #fff;
+}
+#ts2 .action {
+   margin-top: 12px;
+}
+#ts2 h2 {
+   font: 28px/36px 'opensans-bold', sans-serif;
+   color: #2C3E50;
+   margin-bottom: 6px;
+}
+#ts2 h2 a {
+   color: inherit;
+}
+
+#ts2 p, b {
+   color: #2B2B2B;
+   font-size: 17px;
+}
+
+#ts2 img {
+   width: 100%;
+}
+
+#ts2 .button {
+	color:#fff;
+  background: #38c36c;
+}
+#ts2 .button:hover,
+#ts2 .button:active {
+   background: #494949;
+   color: #fff;
+}
+#ts2 p span {
+	font-family: 'opensans-semibold', sans-serif;
+	color: #D8D8D8;
+}
