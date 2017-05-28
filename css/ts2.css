@@ -16,13 +16,13 @@
 #ts2 h1 span { display: none; }
 #ts2 .header-col h1:before {
    font-family: 'FontAwesome';
-   content: "\f0ac";
+   content: "\f19d";
 	padding-right: 10px;
 	font-size: 72px;
    line-height: 72px;
    text-align: left;
    float: left;
-   color: #fff;
+   color: #000;
 }
 #ts2 .action {
    margin-top: 12px;

@@ -650,7 +650,7 @@ ul#nav li.current a { color: #F06000; }
 #call-to-action-light h1 span { display: none; }
 #call-to-action-light .header-col h1:before {
    font-family: 'FontAwesome';
-   content: "\f0ac";
+   content: "\f2b5";
 	padding-right: 10px;
 	font-size: 72px;
    line-height: 72px;
