@@ -1,0 +1,306 @@
+/* ------------------------------------------------------------------ */
+/* f. ZAVREL.NET Modifications
+/* ------------------------------------------------------------------ */
+
+#cover-motto {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 1.5em;
+}
+
+blockquote {
+   margin: 0;
+}
+
+blockquote footer {
+   padding-top: 0px;
+   margin-bottom: 0px;
+   //color: #303030;
+   font-size: 14px;
+   text-align: center;
+   position: relative;
+}
+
+.project-list i {
+  font-size: 1.5em;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+.subheader hr {
+  margin-top: 0;
+}
+
+section .row .six {
+  padding: 20px 30px;
+}
+
+.book {
+  text-align: center;
+}
+
+#contact-wrapper {
+  width: 350px;
+  margin: 0 auto;
+}
+
+form {
+  width: 320px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Dark Section
+/* ------------------------------------------------------------------ */
+
+.dark h1, .dark h2, .dark h3, .dark p, .dark li {
+  color: #838C95;
+}
+
+.dark .lighttopbar {
+  padding-top: 48px;
+  background: #fff;
+}
+
+.dark .darktopbar {
+  padding-top: 48px;
+  background: #2B2B2B;
+}
+
+.dark {
+   background: #2B2B2B;
+   //padding-top: 96px;
+   padding-bottom: 66px;
+   overflow: hidden;
+}
+
+.dark a, .dark a:visited  { color: #fff; }
+.dark a:hover, .dark a:focus { color: #CC5200; }
+
+.dark h2 {
+  //font: 22px/30px 'opensans-bold', sans-serif;
+  font-size: 22px/30px;
+  font-weight: bold;
+  color: #fff;
+  //margin-bottom: 6px;
+  padding: 35px 0;
+}
+.dark p {
+   line-height: 30px;
+   //color: #7A7A7A;
+}
+.dark .profile-pic {
+   position: relative;
+   width: 120px;
+   height: 120px;
+   border-radius: 100%;
+}
+.dark .contact-details { width: 41.66667%; }
+.dark .download {
+   width: 58.33333%;
+   padding-top: 6px;
+}
+.dark .main-col { padding-right: 5%; }
+.dark .download .button {
+   margin-top: 6px;
+   background: #CC5200;
+}
+.dark .download .button:hover {
+   background: #fff;
+   color: #2B2B2B;
+}
+.dark .download .button {
+   margin-right: 15px;
+   font-size: 20px;
+}
+.dark .subheader i {
+  padding-right: 20px;
+  font-size: 70px;
+  text-align: left;
+  vertical-align: middle;
+  color: #fff;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* Grey Section
+/* ------------------------------------------------------------------ */
+
+.grey h1, .grey h2, .grey h3, .grey p, .grey li {
+  color: #000;
+}
+
+.grey .lighttopbar {
+  padding-top: 48px;
+  background: #fff;
+}
+
+.grey .darktopbar {
+  padding-top: 48px;
+  background: #2B2B2B;
+}
+
+.grey {
+   background: #ebeeee;
+   //padding-top: 96px;
+   padding-bottom: 66px;
+   overflow: hidden;
+}
+
+.grey a, .grey a:visited  { color: #fff; }
+.grey a:hover, .grey a:focus { color: #CC5200; }
+
+.grey h2 {
+  //font: 22px/30px 'opensans-bold', sans-serif;
+  font-size: 22px/30px;
+  font-weight: bold;
+  color: #000;
+  //margin-bottom: 6px;
+  padding: 35px 0;
+}
+.grey p {
+   line-height: 30px;
+   //color: #7A7A7A;
+}
+.grey .profile-pic {
+   position: relative;
+   width: 120px;
+   height: 120px;
+   border-radius: 100%;
+}
+.grey .contact-details { width: 41.66667%; }
+.grey .download {
+   width: 58.33333%;
+   padding-top: 6px;
+}
+.grey .main-col { padding-right: 5%; }
+.grey .button {
+  color: #fff;
+  background: #717070;
+}
+.grey .button:hover,
+.grey .button:active {
+  color: #fff;
+  background: #2B2B2B;
+}
+.grey .subheader i {
+  padding-right: 20px;
+  font-size: 70px;
+  text-align: left;
+  vertical-align: middle;
+  color: #000;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* Light Section
+/* ------------------------------------------------------------------ */
+
+.light h1, .light h2, .light h3, .light p, .light li {
+  color: #000;
+}
+
+.light .greytopbar {
+  padding-top: 48px;
+  background: #ebeeee;
+}
+
+.light .darktopbar {
+  padding-top: 48px;
+  background: #2B2B2B;
+}
+
+.light {
+   background: #fff;
+   //padding-top: 66px;
+   padding-bottom: 48px;
+}
+.light h1 {
+   //font: 18px/24px 'opensans-bold', sans-serif;
+   font-size: 18px/24px;
+   font-weight: bold;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   color: #000;
+}
+.light h1 span { display: none; }
+
+.light .action {
+   margin-top: 12px;
+}
+.light h2 {
+   //font: 22px/30px 'opensans-bold', sans-serif;
+   font-size: 22px/30px;
+   font-weight: bold;
+   color: #212121;
+   //margin-bottom: 6px;
+   padding: 35px 0;
+}
+.light h2 a {
+   color: inherit;
+}
+.light p {
+   color: #000;
+   //font-size: 17px;
+}
+.light .button, .light input[type=submit] {
+	color:#fff;
+  background: #717070;
+}
+.light .button:hover,
+.light .button:active,
+.light input[type=submit]:hover,
+.light input[type=submit]:active {
+  color: #fff;
+  background: #2B2B2B;
+}
+.light p span {
+	//font-family: 'opensans-semibold', sans-serif;
+	color: #CC5200;
+}
+.light h2 a span {
+	//font-family: 'opensans-semibold', sans-serif;
+	color: #CC5200;
+}
+.light .subheader i {
+  padding-right: 20px;
+  font-size: 70px;
+  text-align: left;
+  vertical-align: middle;
+  color: #000;
+}
+
+.light input[type="text"], .light input[type="email"], .light input[type="password"], .light select, .light textarea {
+    width: 350px;
+    height: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: solid 1px #e3e3e3;
+    color: #aaa9a9;
+    background-color: #f8f8f8;
+    font-size: 13px;
+    padding: 8px 15px;
+    vertical-align: middle;
+}
+
+.light input[type=submit] {
+  width: 350px;
+  line-height: 30px;
+}
+
+/* Styling of REQUIRED form fields errors of Formspree contact-form */
+.light label.error {
+  text-transform: uppercase;
+  font-size: 13px;
+  margin: 0 0 12px 0;
+}
+
+.light input[type="text"].error, .light input[type="email"].error, .light input[type="password"].error, .light select.error, .light textarea.error {
+  background-color: #838c95;
+  color: white;
+  font-weight: bold;
+  margin: 0 0 6px 0;
+}
+
+.light input[type="text"].error::-webkit-input-placeholder, .light input[type="email"].error::-webkit-input-placeholder, .light input[type="password"].error::-webkit-input-placeholder, .light select.error::-webkit-input-placeholder, .light textarea.error::-webkit-input-placeholder {
+  color: white;
+}

@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
 
    <!--- Basic Page Needs
    ================================================== -->
   <meta charset="utf-8">
-	<title>jan.zavrel.net</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<title>ZAVREL CONSULTING</title>
+	<meta name="description" content="YOUR LIFE, REDESIGNED FOR EXCELLENCE.">
+	<meta name="author" content="Jan Zavrel">
 
    <!-- Mobile Specific Metas
    ================================================== -->
@@ -18,19 +16,19 @@
 	<!-- CSS
     ================================================== -->
    <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
+	 <link rel="stylesheet" href="css/layout.css">
    <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
-   <link rel="stylesheet" href="css/tdi.css">
-   <link rel="stylesheet" href="css/ts2.css">
 
-   <!-- Script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
+   <link rel="stylesheet" href="css/zavrel.net.css">
+
+   <!-- GOOGLE FONTS
+     ================================================== -->
+
+   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
    <!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="favicon.png" >
+	<link rel="shortcut icon" href="zavrel-favicon-final.png" >
 
   <!-- Font Awesome CDN
  ================================================== -->
@@ -50,102 +48,90 @@
 	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
          <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About Me</a></li>
-            <li><a class="smoothscroll" href="#portfolio">Courses</a></li>
-            <li><a href="http://www.thesystem2.com">THE SYSTEM2</a></li>
-            <li><a href="https://zavrel.net">ZAVREL CONSULTING</a></li>
+            <li class="current"><a class="smoothscroll" href="#home"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li><a class="smoothscroll" href="#why"><i class="fa fa-question" aria-hidden="true"></i> Why</a></li>
+            <li><a class="smoothscroll" href="#projects"><i class="fa fa-suitcase" aria-hidden="true"></i> Projects</a></li>
+            <li><a class="smoothscroll" href="#books"><i class="fa fa-book" aria-hidden="true"></i> Books</a></li>
+            <li><a class="smoothscroll" href="#courses"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Courses</a></li>
+            <li><a class="smoothscroll" href="#about-me"><i class="fa fa-drivers-license" aria-hidden="true"></i> About Me</a></li>
+            <!-- <li><a class="smoothscroll" href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a></li> -->
+            <li><a href="https://dev.zavrel.net/" target="_blank"><i class="fa fa-pencil" aria-hidden="true"></i> Blog</a></li>
          </ul> <!-- end #nav -->
 
       </nav> <!-- end #nav-wrap -->
 
       <div class="row banner">
          <div class="banner-text">
-            <h1 class="responsive-headline">jan.zavrel.net</h1>
-            <h3>Welcome to my personal page!<br>
-            <a class="smoothscroll" href="#about">Start scrolling</a>
-            to know more <a class="smoothscroll" href="#about">about me</a>.</h3>
+            <img class="profile-pic"  src="images/cover-logo-360w.png" alt="" />
+
+            <h3 id="cover-motto">YOUR LIFE, REDESIGNED FOR EXCELLENCE.</h3>
             <hr />
             <ul class="social">
-               <li><a href="https://www.facebook.com/zavrelj"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="https://www.twitter.com/zavrelj"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="https://www.instagram.com/zavrelj"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="https://www.github.com/zavrelj"><i class="fa fa-github"></i></a></li>
-               <li><a href="https://soundcloud.com/janzavrel"><i class="fa fa-soundcloud" aria-hidden="true"></i></a></li>
+               <li><a href="https://www.facebook.com/zavrelj" target="_blank"><i class="fa fa-facebook"></i></a></li>
+	             <li><a href="https://www.youtube.com/channel/UCyWvZ5FvUr6ybFUWfHub0DA" target="_blank"><i class="fa fa-youtube"></i></a></li>
+               <li><a href="https://www.twitter.com/zavrelj" target="_blank"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="https://www.instagram.com/zavrelj" target="_blank"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="https://www.github.com/zavrelj" target="_blank"><i class="fa fa-github"></i></a></li>
+               <li><a href="https://soundcloud.com/janzavrel" target="_blank"><i class="fa fa-soundcloud" aria-hidden="true"></i></a></li>
             </ul>
          </div>
       </div>
 
       <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+         <!--<a class="smoothscroll" href="#why"><i class="icon-down-circle"></i></a> -->
+         <a class="smoothscroll" href="#why"><i class="fa fa-chevron-down"></i></a>
       </p>
 
+      <!-- MailerLite Universal -->
+      <script>
+      (function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+      var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+      f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+      var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+      _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+      var ml_account = ml('accounts', '498503', 'j2t0h2k1w9', 'load');
+      </script>
+      <!-- End MailerLite Universal -->
    </header> <!-- Header End -->
 
 
-   <!-- About Section
+
+   <!-- WHY Section
    ================================================== -->
-   <section id="about">
+   <section id="why" class="dark">
+     <div class="darktopbar"></div>
+     <div class="row subheader">
+        <div class="twelve columns main-col">
+           <h2><i class="fa fa-question" aria-hidden="true"></i> WHY</h2>
+           <hr>
+        </div> <!-- end .main-col -->
+     </div>
 
       <div class="row">
+         <div class="five columns">
 
-         <div class="three columns">
-
-            <img class="profile-pic"  src="images/profilepic.png" alt="" />
+           <blockquote class="blockquote-reverse">
+               <p>For things to change, you’ve got to change. For things to get better, you’ve got to get better. It’s easy to do. But it’s easy not to do, too.</p>
+               <footer><cite title="Source Title">The Slight Edge</cite></footer>
+           </blockquote>
 
          </div>
 
-         <div class="nine columns main-col">
+         <div class="seven columns main-col">
 
-            <h2>About Me</h2>
-
+            <p class="drop-cap">
+              I am on a mission to demonstrate how we, human beings, are capable of much more than we might have initially
+              thought, to show how to make life richer and happier, and to provide guidance for finding and reaching goals
+              we are looking for.
+            </p>
             <p>
-              Hi, my name is Jan. I am Evernote Certified Consultant and the founder of <a href="http://www.thesystem2.com">THE SYSTEM2</a>.
-              <br>
-              I run online consulting business at <a href="https://zavrel.net">ZAVREL CONSULTING</a> where I explain my methodology for a life of happiness and fulfillment which I call THE FULL CIRCLE.
-              <br>
-              I started my IT career as a Pascal programming language student in 1994. Later I discovered the potential of the web and co-founded WEBXP company, where I created websites and web applications for local businesses.
-              <br>
-              In 2000, I started working for a German-based company Caatoosee, where I was the part of a team creating the top of the line web shop for than famous Breuninger Mode & Beauty online kaufen.
-              <br>
-              At that time I also started my very own LAMP (Linux, Apache, MySQL, PHP) project and designed, developed and published one of the first so-called discussion servers, that were very popular in my country years before the Facebook became
-              the worldwide success. After 16 years, I am working on its comeback! You can read more about it <a href="https://dev.zavrel.net/talker-reloaded-part-1-e817aedd2b49">here</a>.
-              <br>
-              In 2008, when iPhone SDK was introduced, I moved to mobile apps world and soon published my first verb dictionary for iPhone which you can still find on the App Store.
-              <br>
-              In 2015, I founded <a href="http://www.bohemiapps.com">BOHEMIAPPS</a> which evolved from simple iPhone app project to  creativity platform focused on iOS and web development.
-              <br>
-              In 2016, I decided to push my mission even further with <a href="http://www.smartprofitschool.com">SMART PROFIT SCHOOL</a>. I believe that everyone can teach and SMART PROFIT SCHOOL is about helping newcomers start their own online teaching career. I also published my first book in 2016, <a href="http://amzn.to/2sajhkJ">THE DIGITAL INSTRUCTOR</a>.
-              <br>
-              In 2017 I focused primarily on productivity, became Evernote Certified Consultant, and published my second book, <a href="http://amzn.to/2rc2WyW">THE SYSTEM2</a>.
+              I am positive that the profound change is not only possible, but also very easy. Whoever you are, wherever
+              you come from, whatever you went through, the only thing you need to have your dreams come true is already
+              in your possession. My role is to show you how to use it properly.
             </p>
 
-            <div class="row">
-
-               <div class="columns contact-details">
-
-                  <h2>Contact Details</h2>
-                  <p class="address">
-						              <span>Jan Zavrel</span><br>
-						              <span><a href="mailto:jan@zavrel.net">jan@zavrel.net</a></span><br>
-                          <span><a href="http://jan.zavrel.net">jan.zavrel.net</a></span><br>
-                          <span><a href="http://www.bohemiapps.com">BOHEMIAPPS</a></span><br>
-                          <span><a href="http://www.smartprofitschool.com">SMART PROFIT SCHOOL</a></span><br>
-                          <span><a href="http://www.thenewfitness.net">The New Fitness</a></span><br>
-                          <span><a href="http://www.thesystem2.com">THE SYSTEM2</a></span><br>
-                          <span><a href="https://zavrel.net">ZAVREL CONSULTING</a></span><br>
-					        </p>
-
-               </div>
-
-               <!--
-               <div class="columns download">
-                  <p>
-                     <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
-                  </p>
-               </div>
-              -->
-            </div> <!-- end row -->
+            <a class="button" href="https://blog.zavrel.net/tick-tick-tick" target="_blank">Learn more</a>
 
          </div> <!-- end .main-col -->
 
@@ -155,450 +141,332 @@
 
 
 
-   <!-- Call-To-Action Light Section
+
+
+
+   <!-- PROJECTS Section
    ================================================== -->
-   <section id="ts2">
-
-      <div class="row">
-
-         <div class="two columns header-col">
-
-            <h1><span>Online courses</span></h1>
-
-         </div>
-
-         <div class="seven columns">
-
-            <h2><a href="https://bohemiapps.teachable.com/courses">Online courses</a></h2>
-            <p>I love teaching. Below, you can check selected courses from my <a href="https://bohemiapps.teachable.com/courses">Bohemiapps Online University</a>.</p>
-            <p>You can also find me on <a href="https://www.udemy.com/user/jan-zavrel/">Udemy</a>.</p>
-         </div>
-
-         <div class="three columns action">
-
-         </div>
-
+   <section id="projects" class="light">
+      <div class="darktopbar"></div>
+      <div class="row subheader">
+         <div class="twelve columns main-col">
+            <h2><i class="fa fa-briefcase" aria-hidden="true"></i> PROJECTS</h2>
+            <hr>
+         </div> <!-- end .main-col -->
       </div>
 
-   </section> <!--Call-To-Action Section End-->
-
-
-   <!-- Portfolio Section
-   ================================================== -->
-   <section id="portfolio">
+      <div class="row">
+        <div class="six columns">
+          <h3>TOTAL WEB DEVELOPMENT COURSE</h3>
+          <p><em>Full-stack Web Development for Beginners</em></p>
+          <p>
+            <img class="pull-left" alt="smartprofitschool logo" src="images/projects/twdc-100.png">
+            I am positive that anyone can code. You don't need to know anything more than how to turn on the computer and run a web browser. Yet, I will make you a full-stack web developer in only couple of hours. In this course, you will learn all you need to know to build your own web application, a discussion platform with private messaging and groups.
+          </p>
+          <ul class="project-list">
+            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Frontend technologies</li>
+            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Backend technologies</li>
+            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Fully functional web application</li>
+          </ul>
+          <a class="button" href="http://www.twdc.online" target="_blank">Learn more</a>
+        </div>
+        <div class="six columns">
+          <h3>BOHEMIAPPS</h3>
+          <p><em>iOS & Web Development Made Easy</em></p>
+          <p>
+            <img class="pull-left" alt="bohemiapps logo" src="images/projects/bohemiapps-100.png">
+            BOHEMIAPPS is a project focused on iOS & Web Development. If you want to become a true digital nomad and
+            travel around the world, there’s no better way to start than to learn how to make iOS and Web content.
+            You will be free to go and live wherever you want to. Your notebook will become your office. Grab it and
+            work from a coffeeshop.
+          </p>
+          <ul class="project-list">
+            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>iOS development</li>
+            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Web development</li>
+            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Vector graphics</li>
+          </ul>
+          <a class="button" href="http://learn.bohemiapps.com" target="_blank">Learn more</a>
+        </div>
+      </div>
 
       <div class="row">
-
-         <div class="twelve columns collapsed">
-
-            <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-
-
-
-                <div class="columns portfolio-item">
-                   <div class="item-wrap">
-
-                      <a href="#modal-01" title="">
-                         <img alt="" src="images/portfolio/zavrel.net-portfolio-docker-800x800.png">
-                         <div class="overlay">
-                            <div class="portfolio-item-meta">
-                           <h5>Docker for PHP Developers</h5>
-                               <p>Web Development</p>
-                        </div>
-                         </div>
-                         <div class="link-icon"><i class="icon-plus"></i></div>
-                      </a>
-
-                   </div>
-               </div> <!-- item end -->
-
-
-
-                <div class="columns portfolio-item">
-                   <div class="item-wrap">
-
-                      <a href="#modal-02" title="">
-                         <img alt="" src="images/portfolio/zavrel.net-portfolio-https-800x800.png">
-                         <div class="overlay">
-                            <div class="portfolio-item-meta">
-                           <h5>Secure Your WordPress Website with HTTPS for Free</h5>
-                               <p>Security</p>
-                        </div>
-                         </div>
-                         <div class="link-icon"><i class="icon-plus"></i></div>
-                      </a>
-
-                   </div>
-               </div> <!-- item end -->
-
-                <div class="columns portfolio-item">
-                   <div class="item-wrap">
-
-                      <a href="#modal-03" title="">
-                         <img alt="" src="images/portfolio/zavrel.net-portfolio-static-website-800x800.png">
-                         <div class="overlay">
-                            <div class="portfolio-item-meta">
-                           <h5>Create free, fast and secure static website</h5>
-                               <p>Web Development</p>
-                        </div>
-                         </div>
-                         <div class="link-icon"><i class="icon-plus"></i></div>
-                      </a>
-
-                   </div>
-               </div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-04" title="">
-                        <img alt="" src="images/portfolio/zavrel.net-portfolio-get-more-customers-800x800.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>How to get more customers</h5>
-                              <p>Marketing</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-05" title="">
-                        <img alt="" src="images/portfolio/zavrel.net-portfolio-learn-sketch-800x800.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Learn Sketch in 30 minutes</h5>
-                              <p>Design</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-06" title="">
-                        <img alt="" src="images/portfolio/zavrel.net-portfolio-zombie-run-800x800.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Zombie Run iPhone maze game</h5>
-                              <p>iOS Development</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-07" title="">
-                        <img alt="" src="images/portfolio/zavrel.net-portfolio-catch-the-snake-800x800.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Catch The Snake iOS puzzle game</h5>
-                              <p>iOS Development</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-              <div class="columns portfolio-item">
-                 <div class="item-wrap">
-
-                    <a href="#modal-08" title="">
-                       <img alt="" src="images/portfolio/zavrel.net-portfolio-html-800x800.png">
-                       <div class="overlay">
-                          <div class="portfolio-item-meta">
-                         <h5>HTML by Examples</h5>
-                             <p>Web Development</p>
-                      </div>
-                       </div>
-                       <div class="link-icon"><i class="icon-plus"></i></div>
-                    </a>
-
-                 </div>
-             </div> <!-- item end -->
-
-
-
-            </div> <!-- portfolio-wrapper end -->
-
-         </div> <!-- twelve columns end -->
-
-
-         <!-- Modal Popup -->
-
-
-         <div id="modal-01" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/zavrel.net-portfolio-docker-1050x700.png" alt="" />
-
-		      <div class="description-box">
-			      <h4>Docker for PHP Developers</h4>
-			      <p>Learn step by step how to use Docker and Docker Compose to provision and deploy your PHP project.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Web Development</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="https://bohemiapps.teachable.com/p/docker-for-php-developers">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	       </div><!-- modal-01 End -->
-
-
-
-         <div id="modal-02" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/zavrel.net-portfolio-https-1050x700.png" alt="" />
-
-		      <div class="description-box">
-			      <h4>Secure Your WordPress Website with HTTPS for Free</h4>
-			      <p>Learn step by step how to secure your WordPress website using a free SSL certificate.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Security</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="https://bohemiapps.teachable.com/p/secure-your-wordpress-website-with-https-for-free">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	       </div><!-- modal-02 End -->
-
-
-         <div id="modal-03" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/zavrel.net-portfolio-static-website-1050x700.png" alt="" />
-
-		      <div class="description-box">
-			      <h4>Create free, fast and secure static website</h4>
-			      <p>Step by step guide to save you from expensive webhosting.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Web Development</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://bohemiapps.teachable.com/courses/create-free-fast-and-secure-static-website">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	       </div><!-- modal-03 End -->
-
-
-         <div id="modal-04" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/zavrel.net-portfolio-get-more-customers-1050x700.png" alt="" />
-
-		      <div class="description-box">
-			      <h4>How to get more customers - 3 great tools for growing your online audience</h4>
-			      <p>Online course that will show you 3 amazing free to use tools to grow your online audience.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Marketing</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://bohemiapps.teachable.com/courses/how-to-get-more-customers">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	       </div><!-- modal-04 End -->
-
-         <div id="modal-05" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/zavrel.net-portfolio-learn-sketch-1050x700.png" alt="" />
-
-		      <div class="description-box">
-			      <h4>Learn Sketch in 30 minutes</h4>
-			      <p>Learn quickly how to use this great vector-based editor. All the essential features explained.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Design</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://bohemiapps.teachable.com/courses/learn-sketch-in-30-minutes">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	       </div><!-- modal-05 End -->
-
-         <div id="modal-06" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/zavrel.net-portfolio-zombie-run-1050x700.png" alt="" />
-
-		      <div class="description-box">
-			      <h4>Zombie Run - learn how to make scary maze game for iPhone</h4>
-			      <p>Learn how to create your own scary zombie game for iPhone. Step by step guide from scrath to the App Store.</p>
-               <span class="categories"><i class="fa fa-tag"></i>iOS Development</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://bohemiapps.teachable.com/courses/zombie-run-scary-maze-game-for-iphone">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	       </div><!-- modal-06 End -->
-
-         <div id="modal-07" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/zavrel.net-portfolio-catch-the-snake-1050x700.png" alt="" />
-
-		      <div class="description-box">
-			      <h4>Catch The Snake - iOS game from scratch to App Store</h4>
-			      <p>Learn how to create iOS maze game for iPhone and iPad. Start with a blank project and see the whole process right to the App Store.</p>
-               <span class="categories"><i class="fa fa-tag"></i>iOS Development</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://bohemiapps.teachable.com/courses/catch-the-snake-ios-game">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	       </div><!-- modal-07 End -->
-
-         <div id="modal-08" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/zavrel.net-portfolio-html-1050x700.png" alt="" />
-
-		      <div class="description-box">
-			      <h4>HTML by Examples</h4>
-			      <p>Take a look behind the curtains of web technologies.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Web Development</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://learn.bohemiapps.com/p/html-by-examples">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	       </div><!-- modal-07 End -->
-
-
-
-      </div> <!-- row End -->
-
-   </section> <!-- Portfolio Section End-->
-
-
-   <section id="tdi">
-
-       <div class="row">
-         <div class="six columns">
-           <img src="images/DI-MOCKUP.png">
+        <div class="six columns">
+          <h3>THE SYSTEM2</h3>
+          <p><em>Productivity Toolbox for the Evernote Platform</em></p>
+          <p>
+            <img class="pull-left" alt="the system2 logo" src="images/projects/thesystem2-100.png">
+            THE SYSTEM2 is all about productivity.
+            For quite some time, I was looking for the right way to use Evernote. I tried almost everything from GTD to Secret Weapon, but I was never really satisfied with the results so I started working on my own system and methodology.
+            THE SYSTEM2 is the product of almost 6 years of trials and errors, testing, tweaking and optimization. It will help you make Evernote the only platform you will ever need for task management and storing of reference materials.
+          </p>
+          <ul class="project-list">
+            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Task management</li>
+            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Digital cabinet</li>
+            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Quick search</li>
+          </ul>
+          <a class="button" href="http://www.thesystem2.com" target="_blank">Learn more</a>
+        </div>
+        <div class="six columns">
+          <h3>THE NEW FITNESS</h3>
+          <p><em>Your Body, Remastered</em></p>
+          <p>
+            <img class="pull-left" alt="the new fitness logo" src="images/projects/thenewfitness-100.png">
+            If you’re not healthy, nothing makes sense. Good health should be your primary goal.
+            But health and fitness are unfortunately also a huge business, and it gets harder to weed out
+            the good advice from marketing sales pitch.
+            THE NEW FITNESS is a philosophy of life built around common sense. It stands on the fundamental idea
+            that your body is a temple for your soul.
+            The beauty is in the simplicity. THE NEW FITNESS will give you simple, yet effective tools to remaster your body.
+          </p>
+          <ul class="project-list">
+            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Nutrition</li>
+            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Training</li>
+            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Mindfulness</li>
+          </ul>
+          <a class="button" href="http://www.thenewfitness.net" target="_blank">Learn more</a>
+        </div>
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- BOOKS Section
+   ================================================== -->
+   <section id="books" class="grey">
+      <div class="lighttopbar"></div>
+      <div class="row subheader">
+         <div class="twelve columns main-col">
+            <h2><i class="fa fa-book" aria-hidden="true"></i> BOOKS</h2>
+            <hr>
+         </div> <!-- end .main-col -->
+      </div>
+
+      <div class="row">
+        <div class="six columns">
+          <h3>FRONTEND FROM SCRATCH: HTML, CSS & Javascript for Total Beginners</h3>
+          <p>
+            <img class="pull-left" alt="frontend from scratch book cover" src="images/books/book-frontend-from-scratch-100.png">
+            Learning the frontend web technologies is an essential step for any web developer. In this book, I will walk you through the basics of the three most important languages in the web development world, HTML, CSS, and Javascript.
+            I will show you the history of web development, teach you the latest version of frontend languages and explain everything you need to know for a successful start of your developer career.
+          </p>
+          <div class="book">
+
+            <a class="button" href="https://amzn.to/2SVfVkm" target="_blank">Get the book</a>
+          </div>
+        </div>
+
+        <div class="six columns">
+          <h3>THE NEW FITNESS: Forty Years Old Dad in Twenty Years Old Body</h3>
+          <p>
+            <img class="pull-left" alt="the new fitness book cover" src="images/books/book-the-new-fitness-100.png">
+            Read about my transformation from insecure, chubby, stressed, bored and restless introvert to happy and healthy Superhuman. Discover the hybrid-energy system and find out the difference between sugar-burners and fat-burners.
+            Learn what to eat to become a lean, mean, fat-burning machine. Find out why all popular diets based on caloric restriction eventually fail and how to effortlessly lose weight without eating less and exercising more.
+          </p>
+          <div class="book">
+
+            <a class="button" href="https://amzn.to/2SUIIW0" target="_blank">Get the book</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="six columns">
+          <h3>THE SYSTEM2: Productivity Toolbox Built on the Evernote Platform</h3>
+          <p>
+            <img class="pull-left" alt="the system2 book cover" src="images/books/book-the-system2-100.png">
+            THE SYSTEM2 is the product of almost 6 years of trials and errors, testing, tweaking, and optimization. It is the first productivity system that brings together reference storage and task management in a unique package.
+            THE SYSTEM2 works with only two types of notes, notebooks, and tags. It is simple to use, yet very powerful. It is an ideal system for tracking the progress of long-term projects.
+          </p>
+          <div class="book">
+
+            <a class="button" href="https://amzn.to/2rc2WyW" target="_blank">Get the book</a>
+          </div>
+        </div>
+
+        <div class="six columns">
+          <h3>The Digital Instructor: How to Achieve Financial Freedom with Online Teaching</h3>
+          <p>
+            <img class="pull-left" alt="the digital instructor book cover" src="images/books/book-the-digital-instructor-100.png">
+            Learn how to make money online by teaching. Discover the amazing world of digital products and marketplaces. Grow your business and become financially independent.
+            I will show you how I managed to start and grow my online career from scratch into a profitable business in less than three months.
+            Use my methods and start working on your financial freedom right away.
+          </p>
+          <div class="book">
+
+            <a class="button" href="https://amzn.to/2LSmOST" target="_blank">Get the book</a>
+          </div>
+        </div>
+      </div>
+
+   </section> <!-- About Section End-->
+
+   <!-- COURSES Section
+   ================================================== -->
+   <section id="courses" class="light">
+      <div class="greytopbar"></div>
+      <div class="row subheader">
+         <div class="twelve columns main-col">
+            <h2><i class="fa fa-graduation-cap" aria-hidden="true"></i> COURSES</h2>
+            <hr>
+         </div> <!-- end .main-col -->
+      </div>
+
+      <div class="row">
+        <div class="six columns">
+          <h3>Learn HTML and CSS by Examples</h3>
+          <p><em>Take a look behind the curtains of web technologies</em></p>
+          <p>
+            <img class="pull-left" alt="HTML course logo" src="images/courses/html-100.png">
+            Complete three projects to understand what is HTML and CSS and how it works.
+            I will lead you step by step from the blank document to your own digital business card, a responsive blog header and a restaurant menu.
+          </p>
+          <ul class="project-list">
+            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>The basics of HTML and CSS</li>
+            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>How to create a responsive design</li>
+            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>How to use GitHub Pages</li>
+          </ul>
+          <a class="button" href="https://learn.bohemiapps.com/p/html-by-examples" target="_blank">Enroll now!</a>
+        </div>
+        <div class="six columns">
+          <h3>Secure Your WordPress Website</h3>
+          <p><em>Learn how to secure your WordPress website with SSL certificate</em></p>
+          <p>
+            <img class="pull-left" alt="WordPress course logo" src="images/courses/https-100.png">
+            HTTPS is very important for the ranking of your website.
+            No matter how good your SEO is, an unsecured connection will have a big negative impact on the position
+            of your website in the search results.
+          </p>
+          <ul class="project-list">
+            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>How to work with CloudFlare services</li>
+            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>How to force HTTPS access to your website</li>
+            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>How to test the security level of your website</li>
+          </ul>
+          <a class="button" href="https://learn.bohemiapps.com/p/secure-your-wordpress-website-with-https-for-free" target="_blank">Enroll now!</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="six columns">
+          <h3>Docker for PHP Developers</h3>
+          <p><em>Learn how to use Docker to provision and deploy your PHP project</em></p>
+          <p>
+            <img class="pull-left" alt="Docker course logo" src="images/courses/docker-100.png">
+            Learn how you can use Docker and Docker Compose to orchestrate the whole process of creating images and spinning up containers while creating volumes and mounting directories.
+            Next, you will learn how easy it is to use your code stored in a public GitHub repository.
+          </p>
+          <ul class="project-list">
+            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>How to create your own images using Dockerfiles</li>
+            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>How to work with volumes (mounted directories)</li>
+            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>How to deploy your project to Digital Ocean droplet</li>
+          </ul>
+          <a class="button" href="https://learn.bohemiapps.com/p/docker-for-php-developers" target="_blank">Enroll now!</a>
+        </div>
+        <div class="six columns">
+          <h3>Learn Sketch in 30 minutes</h3>
+          <p><em>Learn how this amazing vector graphics software</em></p>
+          <p>
+            <img class="pull-left" alt="Sketch course logo" src="images/courses/sketch-100.png">
+            You don't need to spend several hours studying Sketch in order to be able to design great looking mobile apps
+            and websites. I can guarantee that you will be designing your own work in 30 minutes after taking this course.
+            You'll be ready to start creating your own vector graphics today.
+          </p>
+          <ul class="project-list">
+            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>How to create icons and banners</li>
+            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>How to easily export different sizes</li>
+            <li><i class="fa fa-check-square-o" aria-hidden="true"></i>Free resources that will boost your designs</li>
+          </ul>
+          <a class="button" href="https://learn.bohemiapps.com/p/learn-sketch-in-30-minutes" target="_blank">Enroll now!</a>
+        </div>
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about-me" class="dark">
+     <div class="lighttopbar"></div>
+     <div class="row subheader">
+        <div class="twelve columns main-col">
+           <h2><i class="fa fa-drivers-license" aria-hidden="true"></i> ABOUT ME</h2>
+           <hr>
+        </div> <!-- end .main-col -->
+     </div>
+
+      <div class="row">
+         <div class="four columns">
+            <img class="profile-pic"  src="images/profilepic.png" alt="" />
          </div>
-         <div class="six columns">
-           <h2><a href="http://land.zavrel.net/tdi">THE DIGITAL INSTRUCTOR: How to Achieve Financial Freedom with Online Teaching</a></h2>
-           <p>As a thank you for visiting my page, get my book for FREE.</p>
-           <a href="http://land.zavrel.net/tdi" class="button">Get It Now</a>
-         </div>
-       </div>
 
-   </section>
+         <div class="eight columns main-col">
+            <p class="drop-cap">
+              My name is Jan Zavrel and I am Biohacker, iOS & Web Developer, Author, Teacher, Lifelong Learner, Evernote Certified Consultant.
+              <br><br>
+              My ultimate goal is to live long enough to live forever. I got inspired by Ray Kurzweil's book <a href="http://amzn.to/2tPddU2" target="_blank">Transcend: Nine Steps to Living Well Forever</a>.
+              To be alive has a special meaning and value for me. I consider it a privilege to be able to wake up in the morning, inhale a fresh air and greet a brand new day.
+              Unfortunately not everyone has been that lucky. Among them my mother, who died when she was 47, my brother when he was 30, and my wife when she was 26 years young.
+              <br><br>
+              My consulting services are focused on nothing less than redesigning your lifestyle so you can live a longer, healthier and happier life.
+              Ultimately, to live forever. I know it sounds like a crazy joke or sci-fi, but it's immensely motivating.
+              <br><br>
+              On my journey, I embrace the philosophy of Jeff Olson's <a href="http://amzn.to/2tQ91ni" target="_blank">Slight Edge</a>.
+              It is constantly reminding me, that I can achieve anything I want. All it takes is to give it just a few minutes each day and stay persistent.
+            </p>
+         </div> <!-- end .main-col -->
+      </div>
+   </section> <!-- About Section End-->
 
-   <section id="ts2">
-
-       <div class="row">
-         <div class="six columns">
-           <h2><a href="https://www.amazon.com/dp/B072PVK4VL">THE SYSTEM2: Productivity Toolbox Built on the Evernote Platform</a></h2>
-           <p>My friends call this system <b>"Evernote on Steroids"</b>. Get my book and learn why!</p>
-           <a href="https://www.amazon.com/dp/B072PVK4VL" class="button">Buy on Amazon</a>
-         </div>
-         <div class="six columns">
-           <img src="images/S2-MOCKUP02-TRANSPARENT.png">
-         </div>
-       </div>
-
-   </section>
 
    <!-- Contact Section
    ==================================================
-   <section id="contact">
+   <section id="contact" class="light">
+      <div class="darktopbar"></div>
+      <div class="row subheader">
+        <div class="twelve columns main-col">
+           <h2><i class="fa fa-envelope" aria-hidden="true"></i> CONTACT</h2>
+           <hr>
+        </div>
+     </div>
 
-         <div class="row section-head">
+     <div class="row">
+       <div class="twelve columns">
+         <div id="contact-wrapper">
 
-            <div class="two columns header-col">
-
-               <h1><span>Get In Touch.</span></h1>
-
-            </div>
-
-            <div class="eight columns">
-
-                  <p class="lead">
-                  I am always happy to help. If you have any questions regarding my work, don't hesitate to ask. I reply to every e-mail.
-                  </p>
-
-            </div>
-
-            <div class="four columns">
-            </div>
-
-         </div>
-
-         <div class="row">
-
-            <div class="eight columns">
-
-
-               <form action="https://formspree.io/jan@zavrel.net" method="post" id="contact-form2" name="contact-form2">
+               <form action="https://formspree.io/jan@zavrel.net" method="post" id="contact-form" name="contact-form">
 					        <fieldset>
 
                   <div>
-    						   <label for="contactName">Name <span class="required">*</span></label>
-    						   <input type="text" value="" size="35" id="contactName" name="name" required>
+    						      <input type="text" value="" size="35" id="contact-form-name" name="name" required placeholder="NAME">
                   </div>
 
                   <div>
-    						   <label for="contactEmail">Email <span class="required">*</span></label>
-    						   <input type="email" value="" size="35" id="contactEmail" name="_replyto" required>
+    						      <input type="email" value="" size="35" id="contact-form-email" name="_replyto" required placeholder="EMAIL">
                   </div>
 
                   <div>
-    						   <label for="contactSubject">Subject</label>
-    						   <input type="text" value="" size="35" id="contactSubject" name="subject">
+    						      <input type="text" value="" size="35" id="contact-form-subject" name="subject" required placeholder="SUBJECT">
                   </div>
 
                   <div>
-                     <label for="contactMessage">Message <span class="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" required></textarea>
+                      <textarea cols="40" rows="10" id="contact-form-message" name="message" required placeholder="WHAT CAN I HELP YOU WITH?"></textarea>
                   </div>
 
                   <div>
-                    <label for="contactMessage"><span class="required"></span></label>
-                    <input type="hidden" name="_subject" value="jan.zavrel.net contact form" />
-                    <input type="hidden" name="_next" value="http://land.zavrel.net/tdi-contact-me" />
-                    <input type="submit" class="submit" name="submit" value="Send">
+                      <input type="hidden" name="_subject" value="ZAVREL CONSULTING" />
+                      <input type="hidden" name="_next" value="http://land.zavrel.net/tdi-contact-me" />
+                      <input type="text" name="_gotcha" style="display:none" />
+                      <input type="submit" class="submit" name="submit" value="Send">
                   </div>
 
 					        </fieldset>
 				        </form>
 
-            </div>
+          </div>
+        </div>
+      </div>
 
-
-            <aside class="four columns footer-widgets">
-
-               <div class="widget widget_contact"></div>
-
-               <div class="widget widget_tweets"></div>
-
-            </aside>
-
-         </div>
-
-   </section> Contact Section End-->
-
+  </section>
+-->
 
 
    <!-- footer
@@ -610,21 +478,21 @@
          <div class="twelve columns">
 
             <ul class="social-links">
-               <li><a href="http://www.facebook.com/zavrelj"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="http://www.twitter.com/zavrelj"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="http://www.instagram.com/zavrelj"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="http://www.github.com/zavrelj"><i class="fa fa-github"></i></a></li>
-               <li><a href="https://soundcloud.com/janzavrel"><i class="fa fa-soundcloud"></i></a></li>
+               <li><a href="http://www.facebook.com/zavrelj" target="_blank"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="http://www.twitter.com/zavrelj" target="_blank"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="http://www.instagram.com/zavrelj" target="_blank"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="http://www.github.com/zavrelj" target="_blank"><i class="fa fa-github"></i></a></li>
+               <li><a href="https://soundcloud.com/janzavrel" target="_blank"><i class="fa fa-soundcloud"></i></a></li>
             </ul>
 
             <ul class="copyright">
-               <li>&copy; Copyright 2017 Jan Zavrel</li>
-               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>
+               <li>&copy; Copyright 2019 Jan Zavrel</li>
+               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/" target="_blank">Styleshout</a></li>
             </ul>
 
          </div>
 
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="fa fa-chevron-up"></i></a></div>
 
       </div>
 
@@ -632,9 +500,9 @@
 
    <!-- Java Script
    ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/jquery-migrate-1.2.1.min.js"></script>
 
    <script src="js/jquery.flexslider.js"></script>
    <script src="js/waypoints.js"></script>

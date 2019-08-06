@@ -25,10 +25,6 @@ e. Others
 /* ------------------------------------------------------------------ */
 /* a. Webfonts and Icon fonts
  ------------------------------------------------------------------ */
-
-@import url("fonts.css");
-@import url("fontello/css/fontello.css");
-
 /*
 @import url("font-awesome/css/font-awesome.min.css");
 */
@@ -146,7 +142,7 @@ html {
 
 body {
    background: #fff;
-   font-family: 'opensans-regular', sans-serif;
+   font-family: 'Roboto', sans-serif;
    font-weight: normal;
    font-size: 15px;
    line-height: 30px;
@@ -161,9 +157,8 @@ body {
 --------------------------------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
-   color: #313131;
-	font-family: 'opensans-bold', sans-serif;
-   font-weight: normal;
+  color: #313131;
+  font-weight: bold;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 h1 { font-size: 38px; line-height: 42px; margin-bottom: 12px; letter-spacing: -1px; }
@@ -177,14 +172,16 @@ h6 { font-size: 14px; line-height: 30px; }
 p { margin: 0 0 30px 0; }
 p img { margin: 0; }
 p.lead {
-   font: 19px/36px 'opensans-light', sans-serif;
-   margin-bottom: 18px;
+  font: 19px/36px;
+  margin-bottom: 18px;
 }
 
 /* for 'em' and 'strong' tags, font-size and line-height should be same with
 the body tag due to rendering problems in some browsers */
-em { font: 15px/30px 'opensans-italic', sans-serif; }
-strong, b { font: 15px/30px 'opensans-bold', sans-serif; }
+//em { font: 15px/30px 'opensans-italic', sans-serif; }
+//strong, b { font: 15px/30px 'opensans-bold', sans-serif; }
+em { font-size: 15px/30px; }
+strong, b { font-size: 15px/30px; }
 small { font-size: 11px; line-height: inherit; }
 
 /*	Blockquotes */
@@ -206,10 +203,10 @@ blockquote:before {
 	left: 0;
 }
 blockquote p {
-   font-family: 'librebaskerville-italic', serif;
    padding: 0;
    font-size: 18px;
    line-height: 36px;
+   font-style: italic;
 }
 blockquote cite {
    display: block;
@@ -262,10 +259,9 @@ blockquote cite a:visited { color: #8B9798; border: none }
 
 /* Abbreviations */
 abbr {
-   font-family: 'opensans-bold', sans-serif;
 	font-variant: small-caps;
 	text-transform: lowercase;
-   letter-spacing: .5px;
+  letter-spacing: .5px;
 	color: gray;
 }
 abbr:hover { cursor: help; }
@@ -276,11 +272,11 @@ abbr:hover { cursor: help; }
 	margin: 0;
 	padding: 14px 6px 0 0;
 	font-size: 84px;
-	font-family: /* Copperplate */ 'opensans-bold', sans-serif;
-   line-height: 60px;
+  font-weight: bold;
+  line-height: 60px;
 	text-indent: 0;
 	background: transparent;
-	color: inherit;
+	color: #CC5200;
 }
 
 hr { border: solid #E3E3E3; border-width: 1px 0 0; clear: both; margin: 11px 0 30px; height: 0; }
@@ -347,9 +343,8 @@ li p { }
 .stats-tabs li a {
 	display: inline-block;
 	font-size: 22px;
-	font-family: 'opensans-bold', sans-serif;
-   border: none;
-   color: #313131;
+  border: none;
+  color: #313131;
 }
 .stats-tabs li a:hover {
    color:#CC5200;
@@ -358,8 +353,7 @@ li p { }
 	display: block;
 	margin: 6px 0 0 0;
 	font-size: 13px;
-	font-family: 'opensans-regular', sans-serif;
-   color: #8B9798;
+  color: #8B9798;
 }
 
 /* definition list */
@@ -414,7 +408,7 @@ dd { margin: 0 0 0 20px; }
    padding: 0;
 }
 .pagination .page-numbers {
-   font: 15px/18px 'opensans-bold', sans-serif;
+   font: 15px/18px;
    display: inline-block;
    padding: 6px 10px;
    margin-right: 3px;
@@ -466,13 +460,13 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-   font: 16px/30px 'opensans-bold', sans-serif;
+   font-size: 14px;
    background: #CC5200;
    display: inline-block;
 	text-decoration: none;
    letter-spacing: 0;
    color: #fff;
-	padding: 12px 20px;
+	padding: 10px 20px;
 	margin-bottom: 18px;
    border: none;
    cursor: pointer;
@@ -568,7 +562,7 @@ textarea { min-height: 220px; }
 
 label,
 legend {
-   font: 16px/24px 'opensans-bold', sans-serif;
+   font: 16px/24px;
 	margin: 12px 0;
    color: #3d4145;
    display: block;
@@ -576,7 +570,7 @@ legend {
 label span,
 legend span {
 	color: #8B9798;
-   font: 14px/24px 'opensans-regular', sans-serif;
+   font: 14px/24px;
 }
 
 input[type="checkbox"],
