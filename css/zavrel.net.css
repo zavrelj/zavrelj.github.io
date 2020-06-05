@@ -2,6 +2,12 @@
 /* f. ZAVREL.NET Modifications
 /* ------------------------------------------------------------------ */
 
+#cover-name {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 2em;
+}
+
 #cover-motto {
   font-family: 'Roboto', sans-serif;
   color: white;
@@ -74,7 +80,7 @@ form {
 }
 
 .dark a, .dark a:visited  { color: #fff; }
-.dark a:hover, .dark a:focus { color: #CC5200; }
+.dark a:hover, .dark a:focus { color: #D0021B; }
 
 .dark h2 {
   //font: 22px/30px 'opensans-bold', sans-serif;
@@ -102,7 +108,7 @@ form {
 .dark .main-col { padding-right: 5%; }
 .dark .download .button {
    margin-top: 6px;
-   background: #CC5200;
+   background: #D0021B;
 }
 .dark .download .button:hover {
    background: #fff;
@@ -147,7 +153,7 @@ form {
 }
 
 .grey a, .grey a:visited  { color: #fff; }
-.grey a:hover, .grey a:focus { color: #CC5200; }
+.grey a:hover, .grey a:focus { color: #D0021B; }
 
 .grey h2 {
   //font: 22px/30px 'opensans-bold', sans-serif;
@@ -255,11 +261,11 @@ form {
 }
 .light p span {
 	//font-family: 'opensans-semibold', sans-serif;
-	color: #CC5200;
+	color: #D0021B;
 }
 .light h2 a span {
 	//font-family: 'opensans-semibold', sans-serif;
-	color: #CC5200;
+	color: #D0021B;
 }
 .light .subheader i {
   padding-right: 20px;

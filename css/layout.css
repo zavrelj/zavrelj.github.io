@@ -33,7 +33,7 @@ header {
    height: 800px;
    min-height: 100vh;
    width: 100%;
-   background: #161415 url(../images/header-background-2019.jpg) no-repeat top center;
+   background: #161415 url(../images/header-background-2020.jpg) no-repeat top center;
    background-size: cover;
 	-webkit-background-size: cover;
    text-align: center;
@@ -44,7 +44,7 @@ header {
   header {
     height: 600px;
     width: 100%;
-    background: #161415 url(../images/header-background-2019.jpg) no-repeat top center;
+    background: #161415 url(../images/header-background-2020.jpg) no-repeat top center;
     background-size: cover;
  	  -webkit-background-size: cover;
   }
@@ -105,7 +105,7 @@ header .social li {
    padding: 0;
 }
 header .social li a { color: #fff; }
-header .social li a:hover { color: #CC5200; }
+header .social li a:hover { color: #D0021B; }
 
 /* scrolldown link */
 header .scrolldown a {
@@ -127,7 +127,7 @@ header .scrolldown a {
    -o-transition: all .3s ease-in-out;
    transition: all .3s ease-in-out;
 }
-header .scrolldown a:hover { color: #CC5200; }
+header .scrolldown a:hover { color: #D0021B; }
 
 /* primary navigation
 --------------------------------------------------------------------- */
@@ -192,7 +192,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #F06000; }
+ul#nav li.current a { color: #D0021B; }
 
 /* ------------------------------------------------------------------ */
 /* i. Footer
@@ -208,7 +208,7 @@ footer {
 }
 
 footer a, footer a:visited { color: #525252; }
-footer a:hover, footer a:focus { color: #CC5200; }
+footer a:hover, footer a:focus { color: #D0021B; }
 
 /* copyright */
 footer .copyright {
@@ -228,7 +228,7 @@ footer .copyright li:before {
     content: "\2022";
     padding-left: 10px;
     padding-right: 10px;
-    color: #CC5200;
+    color: #D0021B;
 }
 footer .copyright  li:first-child:before {
     display: none;
@@ -245,7 +245,7 @@ footer .social-links li {
     margin: 0;
     padding: 0;
     margin-left: 42px;
-    color: #F06000;
+    color: #D0021B;
 }
 
 footer .social-links li:first-child { margin-left: 0; }
@@ -276,4 +276,4 @@ footer .social-links li:first-child { margin-left: 0; }
    line-height: 60px;
  	border-radius: 100%;
 }
-#go-top a:hover { background-color: #CC5200; }
+#go-top a:hover { background-color: #D0021B; }
