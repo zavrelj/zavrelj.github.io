@@ -471,6 +471,7 @@ input[type="button"] {
    border: none;
    cursor: pointer;
    height: auto;
+   width: 100%;
 
    -webkit-transition: all .2s ease-in-out;
 	-moz-transition: all .2s ease-in-out;
@@ -536,9 +537,8 @@ select {
    margin: 0 0 24px 0;
    border: 0;
    outline: none;
-   vertical-align: middle;
    min-width: 225px;
-	max-width: 100%;
+	width: 100%;
    font-size: 15px;
    line-height: 24px;
 	color: #647373;

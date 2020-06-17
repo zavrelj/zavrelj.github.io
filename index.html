@@ -513,8 +513,8 @@
 
 
    <!-- Contact Section
-   ==================================================
-   <section id="contact" class="light">
+   ================================================== -->
+   <section id="contact" class="grey">
       <div class="darktopbar"></div>
       <div class="row subheader">
         <div class="twelve columns main-col">
@@ -527,33 +527,24 @@
        <div class="twelve columns">
          <div id="contact-wrapper">
 
-               <form action="https://formspree.io/jan@zavrel.net" method="post" id="contact-form" name="contact-form">
-					        <fieldset>
+               <form action="https://formspree.io/jan@zavrel.net" method="POST" id="contact-form" name="contact-form">
 
                   <div>
-    						      <input type="text" value="" size="35" id="contact-form-name" name="name" required placeholder="NAME">
+    						      <input type="text" value="" id="contact-form-name" name="name" required placeholder="Name">
                   </div>
 
                   <div>
-    						      <input type="email" value="" size="35" id="contact-form-email" name="_replyto" required placeholder="EMAIL">
+    						      <input type="email" value="" id="contact-form-email" name="_replyto" required placeholder="Email">
                   </div>
 
                   <div>
-    						      <input type="text" value="" size="35" id="contact-form-subject" name="subject" required placeholder="SUBJECT">
+                      <textarea id="contact-form-message" name="message" required placeholder="Message"></textarea>
                   </div>
 
                   <div>
-                      <textarea cols="40" rows="10" id="contact-form-message" name="message" required placeholder="WHAT CAN I HELP YOU WITH?"></textarea>
-                  </div>
-
-                  <div>
-                      <input type="hidden" name="_subject" value="ZAVREL CONSULTING" />
-                      <input type="hidden" name="_next" value="http://land.zavrel.net/tdi-contact-me" />
-                      <input type="text" name="_gotcha" style="display:none" />
                       <input type="submit" class="submit" name="submit" value="Send">
                   </div>
 
-					        </fieldset>
 				        </form>
 
           </div>
@@ -561,7 +552,6 @@
       </div>
 
   </section>
--->
 
 
    <!-- footer
