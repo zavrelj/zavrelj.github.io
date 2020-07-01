@@ -471,7 +471,6 @@ input[type="button"] {
    border: none;
    cursor: pointer;
    height: auto;
-   width: 100%;
 
    -webkit-transition: all .2s ease-in-out;
 	-moz-transition: all .2s ease-in-out;
